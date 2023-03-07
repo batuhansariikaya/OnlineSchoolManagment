@@ -7,3 +7,5 @@ Technologies and frameworks I use
 -Entity Framework
 -Fluent Validation
 -Auto Mapper
+-Identity 
+ 
