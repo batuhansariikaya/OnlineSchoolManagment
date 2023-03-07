@@ -1,0 +1,185 @@
+2023-01-06 21:36:39.641 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-01-06 21:36:41.543 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-06 21:36:41.553 +03:00 [INF] Hosting environment: Development
+2023-01-06 21:36:41.569 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-01-06 21:36:41.658 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/ - -
+2023-01-06 21:36:42.356 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-01-06 21:36:42.594 +03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OnlineExamProject.UI.Controllers.HomeController (OnlineExamProject.UI).
+2023-01-06 21:36:42.611 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-06 21:36:42.613 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2023-01-06 21:36:42.620 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2023-01-06 21:36:42.696 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-01-06 21:36:42.716 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI) in 101.7919ms
+2023-01-06 21:36:42.729 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-01-06 21:36:42.735 +03:00 [INF] HTTP GET / responded 302 in 821.7881 ms
+2023-01-06 21:36:42.809 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2F - -
+2023-01-06 21:36:42.829 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-01-06 21:36:42.834 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-01-06 21:36:42.852 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/ - - - 302 - - 1204.5119ms
+2023-01-06 21:36:44.632 +03:00 [INF] Executing ViewResult, running view Login.
+2023-01-06 21:36:44.977 +03:00 [INF] Executed ViewResult - view Login executed in 392.0621ms.
+2023-01-06 21:36:44.978 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 2143.8878ms
+2023-01-06 21:36:44.978 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-01-06 21:36:44.979 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 2165.9077 ms
+2023-01-06 21:36:45.012 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 2202.1363ms
+2023-01-06 21:36:48.661 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-01-06 21:36:48.792 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 124.6182ms
+2023-01-06 21:36:56.369 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51
+2023-01-06 21:36:56.387 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-01-06 21:36:56.456 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineExamProject.Application.ViewModels.User.VM_Login) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-01-06 21:37:05.277 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-01-06 21:37:06.919 +03:00 [INF] Executed DbCommand (639ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-01-06 21:37:07.002 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-01-06 21:37:07.270 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-01-06 21:37:07.274 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-01-06 21:37:07.275 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-01-06 21:37:07.508 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-01-06 21:37:07.657 +03:00 [INF] Executed DbCommand (72ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-01-06 21:37:07.694 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-01-06 21:37:07.766 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-01-06 21:37:07.801 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-01-06 21:37:07.823 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-01-06 21:37:07.948 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Home/Index.
+2023-01-06 21:37:07.952 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 11495.1627ms
+2023-01-06 21:37:07.954 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-01-06 21:37:07.958 +03:00 [INF] HTTP POST /Auth/Login/ responded 302 in 11580.2446 ms
+2023-01-06 21:37:07.974 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51 - 302 - - 11604.8145ms
+2023-01-06 21:37:07.979 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2023-01-06 21:37:08.000 +03:00 [INF] Authorization was successful.
+2023-01-06 21:37:08.001 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-01-06 21:37:08.004 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2023-01-06 21:37:08.004 +03:00 [INF] Authorization was successful.
+2023-01-06 21:37:08.184 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-01-06 21:37:08.285 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Questions] AS [q]
+2023-01-06 21:37:08.393 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Exams] AS [e]
+2023-01-06 21:37:08.442 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+2023-01-06 21:37:08.449 +03:00 [INF] Executing ViewResult, running view Index.
+2023-01-06 21:37:08.560 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__today_0='?' (DbType = DateTime2), @__last24_1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+WHERE ([t].[CreatedDate] <= @__today_0) AND ([t].[CreatedDate] >= @__last24_1)
+2023-01-06 21:37:09.065 +03:00 [INF] Executed ViewResult - view Index executed in 618.9194ms.
+2023-01-06 21:37:09.066 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 1061.7894ms
+2023-01-06 21:37:09.066 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-01-06 21:37:09.066 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 1085.2315 ms
+2023-01-06 21:37:09.075 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 200 - text/html;+charset=utf-8 1095.2364ms
+2023-01-06 21:37:09.199 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-01-06 21:37:09.207 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 6.7832 ms
+2023-01-06 21:37:09.219 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 19.5927ms
+2023-01-06 21:37:09.382 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - -
+2023-01-06 21:37:09.383 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-01-06 21:37:09.418 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - -
+2023-01-06 21:37:09.433 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - -
+2023-01-06 21:37:09.435 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - -
+2023-01-06 21:37:09.436 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - -
+2023-01-06 21:37:09.464 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-warning.png responded 404 in 28.6361 ms
+2023-01-06 21:37:09.464 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/wallet.png responded 404 in 27.3684 ms
+2023-01-06 21:37:09.464 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/paypal.png responded 404 in 81.1352 ms
+2023-01-06 21:37:09.464 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/chart.png responded 404 in 45.6881 ms
+2023-01-06 21:37:09.464 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-success.png responded 404 in 30.3503 ms
+2023-01-06 21:37:09.587 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - - - 404 - - 169.5347ms
+2023-01-06 21:37:09.588 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - - - 404 - - 158.4035ms
+2023-01-06 21:37:09.595 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - - - 404 - - 160.5453ms
+2023-01-06 21:37:09.595 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - - - 404 - - 177.8355ms
+2023-01-06 21:37:09.596 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - - - 404 - - 112.9153ms
+2023-01-06 21:37:09.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 164.9187ms
+2023-01-06 21:40:33.429 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - -
+2023-01-06 21:40:33.437 +03:00 [INF] Authorization was successful.
+2023-01-06 21:40:33.437 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2023-01-06 21:40:33.450 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2023-01-06 21:40:33.450 +03:00 [INF] Authorization was successful.
+2023-01-06 21:40:33.485 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-01-06 21:40:33.589 +03:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2023-01-06 21:40:45.444 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-01-06 21:41:04.849 +03:00 [INF] Executed DbCommand (656ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([CreatedDate], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-01-06 21:41:05.300 +03:00 [INF] Executed DbCommand (41ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([CreatedDate], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-01-06 21:41:05.374 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([CreatedDate], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-01-06 21:41:05.452 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([CreatedDate], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-01-06 21:41:05.545 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([CreatedDate], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-01-06 21:41:05.574 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([CreatedDate], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-01-06 21:41:05.639 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Menus] ([CreatedDate], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Menus]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-01-06 21:41:05.778 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0

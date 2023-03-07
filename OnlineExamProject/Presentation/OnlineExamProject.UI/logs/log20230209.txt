@@ -1,0 +1,802 @@
+2023-02-09 20:49:27.506 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-09 20:49:28.567 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-09 20:49:28.570 +03:00 [INF] Hosting environment: Development
+2023-02-09 20:49:28.570 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-02-09 20:49:28.657 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - -
+2023-02-09 20:49:28.928 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 20:49:29.924 +03:00 [INF] Route matched with {area = "Admin", action = "GradeList", controller = "Grade"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GradeList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.GradeController (OnlineExamProject.UI).
+2023-02-09 20:49:29.944 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-09 20:49:29.947 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2023-02-09 20:49:29.957 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2023-02-09 20:49:30.012 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-02-09 20:49:30.027 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI) in 87.1442ms
+2023-02-09 20:49:30.036 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 20:49:30.043 +03:00 [INF] HTTP GET /Admin/Grade/GradeList responded 302 in 1262.4563 ms
+2023-02-09 20:49:30.087 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - - - 0 - - 1440.5559ms
+2023-02-09 22:30:02.656 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-09 22:30:04.000 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-09 22:30:04.013 +03:00 [INF] Hosting environment: Development
+2023-02-09 22:30:04.013 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-02-09 22:30:04.099 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - -
+2023-02-09 22:30:04.529 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 22:30:05.378 +03:00 [INF] Route matched with {area = "Admin", action = "GradeList", controller = "Grade"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GradeList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.GradeController (OnlineExamProject.UI).
+2023-02-09 22:30:05.398 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-09 22:30:05.400 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2023-02-09 22:30:05.411 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2023-02-09 22:30:05.455 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-02-09 22:30:05.475 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI) in 76.7429ms
+2023-02-09 22:30:05.482 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 22:30:05.489 +03:00 [INF] HTTP GET /Admin/Grade/GradeList responded 302 in 1235.4391 ms
+2023-02-09 22:30:05.593 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FGrade%2FGradeList - -
+2023-02-09 22:30:05.607 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - - - 302 - - 1516.2785ms
+2023-02-09 22:30:05.614 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:30:05.625 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-02-09 22:30:05.711 +03:00 [INF] Executing ViewResult, running view Login.
+2023-02-09 22:30:06.167 +03:00 [INF] Executed ViewResult - view Login executed in 505.9537ms.
+2023-02-09 22:30:06.169 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 543.1725ms
+2023-02-09 22:30:06.175 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:30:06.175 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 575.5029 ms
+2023-02-09 22:30:06.184 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FGrade%2FGradeList - - - 200 - text/html;+charset=utf-8 591.8613ms
+2023-02-09 22:30:07.821 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-02-09 22:30:07.840 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 10.4700ms
+2023-02-09 22:30:30.087 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51
+2023-02-09 22:30:30.101 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:30:31.069 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineExamProject.Application.ViewModels.User.VM_Login) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-02-09 22:30:33.870 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-02-09 22:30:34.904 +03:00 [INF] Executed DbCommand (196ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-09 22:30:35.031 +03:00 [INF] Executed DbCommand (63ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-09 22:30:35.302 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-02-09 22:30:35.306 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-02-09 22:30:35.307 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-02-09 22:30:35.488 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-02-09 22:30:35.748 +03:00 [INF] Executed DbCommand (107ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-09 22:30:35.808 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:35.929 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:35.943 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:35.948 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:35.951 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:35.959 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:35.962 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:35.966 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:35.973 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:35.977 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:35.982 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:35.990 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:35.994 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:35.998 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.001 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.008 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.012 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.016 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.021 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.028 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.031 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.035 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.045 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.048 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.052 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.061 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.064 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.074 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.078 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.085 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.092 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.099 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.109 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.118 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.127 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.135 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.148 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.152 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.158 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.164 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.167 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.174 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.180 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.185 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.192 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.197 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.203 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:30:36.213 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:30:36.239 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-02-09 22:30:36.247 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-09 22:30:36.368 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Home/Index.
+2023-02-09 22:30:36.378 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 5308.3848ms
+2023-02-09 22:30:36.379 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:30:36.382 +03:00 [INF] HTTP POST /Auth/Login/ responded 302 in 6285.2572 ms
+2023-02-09 22:30:36.399 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51 - 302 - - 6312.0814ms
+2023-02-09 22:30:36.410 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2023-02-09 22:30:36.427 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-02-09 22:30:36.437 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2023-02-09 22:30:36.446 +03:00 [INF] Authorization was successful.
+2023-02-09 22:30:36.614 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-02-09 22:30:36.668 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Questions] AS [q]
+2023-02-09 22:30:36.747 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Exams] AS [e]
+2023-02-09 22:30:36.766 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+2023-02-09 22:30:36.776 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-09 22:30:36.788 +03:00 [INF] Executing ViewResult, running view Index.
+2023-02-09 22:30:36.932 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__today_0='?' (DbType = DateTime2), @__last24_1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+WHERE ([t].[CreatedDate] <= @__today_0) AND ([t].[CreatedDate] >= @__last24_1)
+2023-02-09 22:30:37.627 +03:00 [INF] Executed ViewResult - view Index executed in 841.5395ms.
+2023-02-09 22:30:37.627 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 1189.9809ms
+2023-02-09 22:30:37.628 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-02-09 22:30:37.628 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 1216.0876 ms
+2023-02-09 22:30:37.650 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 200 - text/html;+charset=utf-8 1240.2600ms
+2023-02-09 22:30:37.715 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-02-09 22:30:37.726 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 10.1248 ms
+2023-02-09 22:30:37.730 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 14.3898ms
+2023-02-09 22:30:38.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-02-09 22:30:38.349 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 7.5466ms
+2023-02-09 22:30:38.730 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - -
+2023-02-09 22:30:38.742 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/wallet.png responded 404 in 11.2444 ms
+2023-02-09 22:30:38.743 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - - - 404 - - 13.6221ms
+2023-02-09 22:30:39.900 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - -
+2023-02-09 22:30:39.906 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/paypal.png responded 404 in 6.3730 ms
+2023-02-09 22:30:39.908 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - - - 404 - - 8.0252ms
+2023-02-09 22:30:40.031 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - -
+2023-02-09 22:30:40.033 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/chart.png responded 404 in 1.6607 ms
+2023-02-09 22:30:40.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - -
+2023-02-09 22:30:40.038 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-success.png responded 404 in 2.3783 ms
+2023-02-09 22:30:40.040 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - - - 404 - - 4.4824ms
+2023-02-09 22:30:40.048 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - - - 404 - - 17.1054ms
+2023-02-09 22:30:40.090 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - -
+2023-02-09 22:30:40.092 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-warning.png responded 404 in 1.5233 ms
+2023-02-09 22:30:40.093 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - - - 404 - - 2.6925ms
+2023-02-09 22:30:53.069 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - -
+2023-02-09 22:30:53.072 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 22:30:53.073 +03:00 [INF] Route matched with {area = "Admin", action = "GradeList", controller = "Grade"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GradeList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.GradeController (OnlineExamProject.UI).
+2023-02-09 22:30:53.074 +03:00 [INF] Authorization was successful.
+2023-02-09 22:30:53.102 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-02-09 22:30:53.120 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-09 22:30:53.131 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-09 22:30:53.149 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-09 22:30:53.618 +03:00 [INF] Executed DbCommand (47ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-02-09 22:30:53.891 +03:00 [INF] Executing ViewResult, running view GradeList.
+2023-02-09 22:30:53.905 +03:00 [INF] Executed ViewResult - view GradeList executed in 15.1938ms.
+2023-02-09 22:30:53.906 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI) in 832.4514ms
+2023-02-09 22:30:53.906 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 22:30:53.907 +03:00 [INF] HTTP GET /Admin/Grade/GradeList responded 200 in 835.6393 ms
+2023-02-09 22:30:53.908 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - - - 200 - text/html;+charset=utf-8 839.4749ms
+2023-02-09 22:30:53.985 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-02-09 22:30:53.987 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.5014 ms
+2023-02-09 22:30:53.988 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 2.9440ms
+2023-02-09 22:30:54.655 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-02-09 22:30:54.673 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 17.6951ms
+2023-02-09 22:34:00.487 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-09 22:34:01.219 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-09 22:34:01.220 +03:00 [INF] Hosting environment: Development
+2023-02-09 22:34:01.220 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-02-09 22:34:01.280 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - -
+2023-02-09 22:34:01.901 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 22:34:02.002 +03:00 [INF] Route matched with {area = "Admin", action = "GradeList", controller = "Grade"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GradeList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.GradeController (OnlineExamProject.UI).
+2023-02-09 22:34:02.020 +03:00 [INF] Authorization was successful.
+2023-02-09 22:34:04.106 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-02-09 22:34:05.081 +03:00 [INF] Executed DbCommand (189ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-09 22:34:05.153 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-09 22:34:05.660 +03:00 [INF] Executed DbCommand (111ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-09 22:34:06.123 +03:00 [INF] Executed DbCommand (196ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-02-09 22:34:06.419 +03:00 [INF] Executing ViewResult, running view GradeList.
+2023-02-09 22:34:06.481 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI) in 4463.9522ms
+2023-02-09 22:34:06.486 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 22:34:06.497 +03:00 [ERR] HTTP GET /Admin/Grade/GradeList responded 500 in 5140.6118 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[OnlineExamProject.Domain.Entities.Grade]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Grade]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method283(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-02-09 22:34:06.651 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[OnlineExamProject.Domain.Entities.Grade]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Grade]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method283(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-02-09 22:34:07.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - - - 500 - text/html;+charset=utf-8 5822.8943ms
+2023-02-09 22:34:07.227 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2023-02-09 22:34:07.226 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-02-09 22:34:07.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 15.9010ms
+2023-02-09 22:34:07.318 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 91.4490ms
+2023-02-09 22:36:42.904 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-02-09 22:36:44.355 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-02-09 22:36:44.356 +03:00 [INF] Hosting environment: Development
+2023-02-09 22:36:44.376 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-02-09 22:36:44.468 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/ - -
+2023-02-09 22:36:44.789 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-02-09 22:36:45.570 +03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OnlineExamProject.UI.Controllers.HomeController (OnlineExamProject.UI).
+2023-02-09 22:36:45.612 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-02-09 22:36:45.615 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2023-02-09 22:36:45.623 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2023-02-09 22:36:45.690 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-02-09 22:36:45.707 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI) in 117.0011ms
+2023-02-09 22:36:45.716 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-02-09 22:36:45.721 +03:00 [INF] HTTP GET / responded 302 in 1109.4594 ms
+2023-02-09 22:36:45.829 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2F - -
+2023-02-09 22:36:45.846 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:36:45.851 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-02-09 22:36:45.861 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/ - - - 302 - - 1399.5455ms
+2023-02-09 22:36:45.920 +03:00 [INF] Executing ViewResult, running view Login.
+2023-02-09 22:36:46.176 +03:00 [INF] Executed ViewResult - view Login executed in 284.3328ms.
+2023-02-09 22:36:46.177 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 325.2527ms
+2023-02-09 22:36:46.177 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:36:46.178 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 344.9637 ms
+2023-02-09 22:36:46.194 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 364.2232ms
+2023-02-09 22:36:46.349 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-02-09 22:36:46.441 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 84.0543ms
+2023-02-09 22:37:05.562 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51
+2023-02-09 22:37:05.579 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:37:05.695 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineExamProject.Application.ViewModels.User.VM_Login) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-02-09 22:37:08.636 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-02-09 22:37:10.824 +03:00 [INF] Executed DbCommand (211ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-09 22:37:10.912 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-09 22:37:11.299 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-02-09 22:37:11.303 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-02-09 22:37:11.304 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-02-09 22:37:11.565 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-02-09 22:37:11.732 +03:00 [INF] Executed DbCommand (96ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-09 22:37:11.769 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:11.863 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:11.877 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:11.889 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:11.894 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:11.901 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:11.909 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:11.917 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:11.928 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:11.936 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:11.943 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:11.969 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:11.983 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:11.995 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.001 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.008 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.015 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.022 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.035 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.043 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.049 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.061 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.067 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.076 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.082 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.095 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.101 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.112 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.126 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.132 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.141 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.148 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.155 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.163 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.172 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.181 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.193 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.204 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.210 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.219 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.227 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.233 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.237 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.242 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.249 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.255 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.268 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-02-09 22:37:12.274 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-02-09 22:37:12.300 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-02-09 22:37:12.307 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-09 22:37:12.430 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Home/Index.
+2023-02-09 22:37:12.433 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 6737.6375ms
+2023-02-09 22:37:12.435 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-02-09 22:37:12.443 +03:00 [INF] HTTP POST /Auth/Login/ responded 302 in 6872.0169 ms
+2023-02-09 22:37:12.459 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51 - 302 - - 6896.7834ms
+2023-02-09 22:37:12.466 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2023-02-09 22:37:12.481 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-02-09 22:37:12.492 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2023-02-09 22:37:12.507 +03:00 [INF] Authorization was successful.
+2023-02-09 22:37:12.729 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-02-09 22:37:13.004 +03:00 [INF] Executed DbCommand (217ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Questions] AS [q]
+2023-02-09 22:37:13.187 +03:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Exams] AS [e]
+2023-02-09 22:37:13.325 +03:00 [INF] Executed DbCommand (123ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+2023-02-09 22:37:13.444 +03:00 [INF] Executed DbCommand (110ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-09 22:37:13.477 +03:00 [INF] Executing ViewResult, running view Index.
+2023-02-09 22:37:13.935 +03:00 [INF] Executed DbCommand (153ms) [Parameters=[@__today_0='?' (DbType = DateTime2), @__last24_1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+WHERE ([t].[CreatedDate] <= @__today_0) AND ([t].[CreatedDate] >= @__last24_1)
+2023-02-09 22:37:14.631 +03:00 [INF] Executed ViewResult - view Index executed in 1155.7934ms.
+2023-02-09 22:37:14.632 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 2139.2863ms
+2023-02-09 22:37:14.632 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-02-09 22:37:14.632 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 2163.9739 ms
+2023-02-09 22:37:14.729 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 200 - text/html;+charset=utf-8 2256.0912ms
+2023-02-09 22:37:14.758 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-02-09 22:37:14.768 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 8.6689 ms
+2023-02-09 22:37:14.783 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 25.0397ms
+2023-02-09 22:37:15.173 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-02-09 22:37:15.399 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - -
+2023-02-09 22:37:15.412 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - -
+2023-02-09 22:37:15.413 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - -
+2023-02-09 22:37:15.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - -
+2023-02-09 22:37:15.415 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - -
+2023-02-09 22:37:15.419 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/chart.png responded 404 in 2.7227 ms
+2023-02-09 22:37:15.419 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/paypal.png responded 404 in 19.1499 ms
+2023-02-09 22:37:15.419 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-success.png responded 404 in 5.9866 ms
+2023-02-09 22:37:15.419 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-warning.png responded 404 in 5.6331 ms
+2023-02-09 22:37:15.490 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - - - 404 - - 91.4043ms
+2023-02-09 22:37:15.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - - - 404 - - 282.9654ms
+2023-02-09 22:37:15.697 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/wallet.png responded 404 in 280.7856 ms
+2023-02-09 22:37:15.780 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 607.3099ms
+2023-02-09 22:37:16.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - - - 404 - - 1339.7532ms
+2023-02-09 22:37:16.755 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - - - 404 - - 1339.7141ms
+2023-02-09 22:37:17.204 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - - - 404 - - 1790.6353ms
+2023-02-09 22:37:29.252 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - -
+2023-02-09 22:37:29.260 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-02-09 22:37:29.266 +03:00 [INF] Route matched with {area = "Admin", action = "GradeList", controller = "Grade"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GradeList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.GradeController (OnlineExamProject.UI).
+2023-02-09 22:37:29.267 +03:00 [INF] Authorization was successful.
+2023-02-09 22:37:29.323 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-02-09 22:37:29.532 +03:00 [INF] Executed DbCommand (180ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-02-09 22:37:29.560 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[GradeId], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-02-09 22:37:29.777 +03:00 [INF] Executed DbCommand (210ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-02-09 22:37:30.626 +03:00 [INF] Executed DbCommand (251ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]

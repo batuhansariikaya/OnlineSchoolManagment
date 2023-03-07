@@ -1,0 +1,276 @@
+﻿@using OnlineExamProject.Domain.Entities
+@using OnlineExamProject.Domain.Entities.Identity
+@model (List<Menu>,List<AppRole>)
+@{
+    ViewData["Title"] = "Enpoint Listesi ";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+<div class="card m-4">
+    <div class="text-nowrap m-5">          
+                <form action="/Admin/AuthorizationEndpoint/AssignRoletoEndpoint/" method="post">
+                    @foreach (var item in Model.Item1)
+                    {
+                       
+                        <p class="text-bold"><i class='bx bx-chevron-down'></i>@item.Name</p>                        
+                        @foreach (var action in item.Endpoints)
+                        {
+                            <ul>
+                                <li>
+                                    <div class="d-flex">
+                                         <button class="btn btn-primary" value="@action.Id" type="button" data-bs-toggle="modal" data-bs-target="#roleList">Rol ata</button>
+                                    <p id="definition">  @action.Definition</p>
+                                    </div>                                   
+                                </li>
+                            </ul>
+                            <input type="hidden" name="name" value="@item.Name" />
+                            <input type="hidden" name="" value="@action.Code" />
+                        }
+                    }
+                    <div class="modal fade" id="roleList" tabindex="-1" aria-hidden="true">
+
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel1">Rol Ekle</h5>
+                                    <button type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Kapat"></button>
+                                </div>
+                                <div class="col-lg-6">
+                                    <small class="text-light fw-semibold">List Group With Checkbox</small>
+                                    <div class="demo-inline-spacing mt-3">
+                                        <div class="list-group">
+                                            @foreach (var _item in Model.Item2)
+                                            {
+                                                <li><input class="form-check-input me-1" name="roles" type="checkbox" id="cbKutular" value="@_item.Name" />@_item.Name</li>
+                                            }
+                                            <button type="submit">Ekle</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </form>           
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#btnSecilenGor").click(function() {
+            var Secilenler = "";
+            $('#cbKutular :checked').each(function() {
+                //Secilenler.push($(this).val());
+                Secilenler += $(this).val() + ",";
+            });
+
+            alert(Secilenler);
+        });
+    });
+</script>
+@*
+
+@foreach (var item in Model)
+{
+    <ul>
+        @item.Name
+        @foreach (var datas in item.Actions)
+        {
+            <li>  <button data-bs-toggle="modal" data-bs-target="#assignRole">Rol Atas</button><p>@datas.Definition</p></li>
+            <li> <p>@datas.Code</p></li>
+
+
+        }
+    </ul>
+
+
+}
+<div class="modal fade" id="assignRole" tabindex="-1" aria-hidden="true">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Rol Ekle</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Kapat"></button>
+            </div>
+
+            <div class="col-lg-6">
+                <small class="text-light fw-semibold">List Group With Checkbox</small>
+                <div class="demo-inline-spacing mt-3">
+                    <div class="list-group">
+                        <form method="post" action="/Admin/AuthorizationEndpoint/AssignRoletoEndpoint/">
+                            @await Component.InvokeAsync("RoleList")
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+document.getElementById("data").innerHTML = "Merhaba";
+</script>*@
+@*<div class="card">
+                <h5 class="card-header">Bordered Table</h5>
+                <div class="card-body">
+                  <div class="table-responsive text-nowrap">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th>Rol Adı</th>
+                          <th>Kullanıcı Sayısı</th>
+                          <th>Oluşturulma Tarihi</th>
+                          <th>İşlemler</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+                                <td>@item.Name</td>
+                                @foreach (var data in item.Actions)
+                                {
+                                    <td><button  classs="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#roleList">@data.Definition</button></td>
+                                    @await Component.InvokeAsync("RoleList")
+                                }
+                            </tr>
+                        }
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>*@
+<!--/ Bordered Table -->
+@*
+@foreach (var item in Model)
+{
+    <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#assignRole">@item</a>
+    @foreach (var endpoint in item.Actions)
+    {
+        <a href="#" class="btn btn-secondary"   data-bs-toggle="modal" data-bs-target="#assignRole">@endpoint.Definition (@endpoint.HttpType)</a>
+    }
+    <div class="modal fade" id="assignRole" tabindex="-1" aria-hidden="true">s
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Rol Ekle</h5>
+                    <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Kapat"></button>
+                </div>
+                <form action="/Admin/AuthorizationEndpoint/AssignRoletoEndpoint/" method="post">
+                    <div class="col-lg-6">
+                        <small class="text-light fw-semibold">List Group With Checkbox</small>
+                        <div class="demo-inline-spacing mt-3">
+                            <div class="list-group">
+
+                                @foreach (var endpoint in item.Actions)
+                              {
+                                         <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" />
+
+                                 @item.Actions.
+
+
+
+
+                                    </label>
+
+
+                               @* <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" />
+                                    Tart tiramisu cake
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" />
+                                    Bonbon toffee muffin
+                                </label>
+                                <label class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" />
+                                    Dragée tootsie roll
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+}
+*@
+
+@*<div class="modal fade" id="assignRole" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Rol Ekle</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Kapat"></button>
+            </div>
+            <form action="/Admin/AuthorizationEndpoint/AssignRoletoEndpoint/" method="post">
+                <div class="col-lg-6">
+                    <small class="text-light fw-semibold">List Group With Checkbox</small>
+                    <div class="demo-inline-spacing mt-3">
+                        <div class="list-group">
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" />
+                                Soufflé pastry pie ice
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" />
+                                Bear claw cake biscuit
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" />
+                                Tart tiramisu cake
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" />
+                                Bonbon toffee muffin
+                            </label>
+                            <label class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" />
+                                Dragée tootsie roll
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>*@
+

@@ -1,0 +1,47 @@
+1- sýnýf ile kullanýcý 
+	1.1- bir sýnýfýn birden fazla öðrencisi olabilir.
+	1.2 sýnýfId sýnýfad sýnýfkod 
+	1.3 userad sýnýfId
+2- sýnýf ile sýnav 
+   2.1 bir sýnýfta birden fazla sýnav yapýlabilir.
+   2.2 sýnýfId sýnýfAd sýnýfKod
+   2.3 sýnýfId sýnavId
+   2.4 sýnavda 
+********************************* 
+3- Profilim
+	3.1 profil fotosu ve bilgileri
+	3.2 
+4- sýnýf tablosuna kontentjan ekleenbilir
+5- sýnýf oluþtur ve bu sýnýfa öðrencileri ekle.
+6- sistemi CQRS Design Pattern'a geçir.
+7- identity validation s
+8- arama motoru optimizasyonu
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7- Kullanýlan Tasarým Desenleri , Teknolojiler ve Mimariler:
+	*Repository Design Pattern 
+	*SOLID 
+	*CQRS 
+	*Onion Architecture
+	*
+
+8- Kullanýlan Database :	
+	*MSSQL (Ýliþkisel veritabaný)
+

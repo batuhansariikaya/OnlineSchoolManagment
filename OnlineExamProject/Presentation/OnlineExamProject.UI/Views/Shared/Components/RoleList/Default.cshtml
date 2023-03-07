@@ -1,0 +1,27 @@
+﻿@using OnlineExamProject.Domain.Entities.Identity
+@model List<AppRole>
+
+
+
+
+<div class="col-lg-6">
+    <small class="text-light fw-semibold" >List Group With Checkbox </small>
+    <div class="demo-inline-spacing mt-3">
+      
+        <div class="list-group">
+            @foreach (var item in Model)
+            {
+                @Html.DropDownListFor(x=>item.Id,(List<SelectListItem>)ViewBag.roles,new {@class="form-control"});
+               @* <label class="list-group-item">
+                    <input class="form-check-input me-1" name="roles"  type="checkbox" value="" />
+                    @item.Name
+                </label>
+                <p id="_actionName"></p>*@
+                
+            }
+        </div>
+        <button type="submit" >Rol ata</button>
+ 
+    </div>
+
+</div>

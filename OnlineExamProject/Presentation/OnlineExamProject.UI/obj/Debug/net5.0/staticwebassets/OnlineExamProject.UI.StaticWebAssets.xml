@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="_content/AspNetCoreHero.ToastNotification" Path="C:\Users\Batuhan\.nuget\packages\aspnetcorehero.toastnotification\1.1.0\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/NToastNotify" Path="C:\Users\Batuhan\.nuget\packages\ntoastnotify\8.0.0\build\..\staticwebassets\" />
+</StaticWebAssets>

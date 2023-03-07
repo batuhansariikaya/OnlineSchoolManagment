@@ -1,0 +1,95 @@
+﻿@model OnlineExamProject.Application.DTOs.User.UserUpdateDTO
+@{
+    ViewData["Title"] = "Kullanıcıyı Güncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="col-xxl m-5">
+                  <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                      <h5 class="mb-0">Basic with Icons</h5>
+                      <small class="text-muted float-end">Merged input group</small>
+                    </div>
+                    <div class="card-body">
+                      <form method="post" action="/Admin/Account/UpdateUser/">
+                          @Html.HiddenFor(x=>x.Id)
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Ad</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                                ><i class="bx bx-user"></i
+                              ></span>                         
+                                 @Html.TextBoxFor(x=>x.Name ,new{@class="form-control",@id="basic-icon-default-email"})
+                            </div>
+                          </div>
+                        </div>
+                         <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Soyad</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-fullname2" class="input-group-text"
+                                ><i class="bx bx-user"></i
+                              ></span>
+                              @Html.TextBoxFor(x=>x.Surname ,new{@class="form-control",@id="basic-icon-default-email"})
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Kullanıcı Adı</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-company2" class="input-group-text"
+                                ><i class="bx bx-buildings"></i
+                              ></span>                       
+                                 @Html.TextBoxFor(x=>x.Username ,new{@class="form-control",@id="basic-icon-default-email"})
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Mail</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text"><i class="bx bx-envelope"></i></span>                                                           @Html.TextBoxFor(x=>x.EMail ,new{@class="form-control",@id="basic-icon-default-email"})
+                            </div>                           
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 form-label" for="basic-icon-default-phone">Telefon No</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-phone2" class="input-group-text"
+                                ><i class="bx bx-phone"></i
+                              ></span>
+                              <input
+                                type="text"
+                                id="basic-icon-default-phone"
+                                class="form-control phone-mask"
+                                placeholder="658 799 8941"
+                                aria-label="658 799 8941"
+                                aria-describedby="basic-icon-default-phone2"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-3">
+                          <label class="col-sm-2 form-label" for="basic-icon-default-message">Rol</label>
+                          <div class="col-sm-10">
+                            <div class="input-group input-group-merge">
+                              <span id="basic-icon-default-message2" class="input-group-text"
+                                ><i class="bx bx-down-arrow-alt"></i
+                              ></span>
+                         @Html.DropDownListFor(x=>x.Role,(List<SelectListItem>)ViewBag.role,new{@class="form-control"})
+                            </div>
+                          </div>
+                        </div>                
+                        <div class="row justify-content-end">
+                          <div class="col-sm-10">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>

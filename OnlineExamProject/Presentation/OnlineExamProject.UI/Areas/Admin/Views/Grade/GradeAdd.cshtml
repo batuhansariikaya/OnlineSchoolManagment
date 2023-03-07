@@ -1,0 +1,64 @@
+﻿@model OnlineExamProject.Application.DTOs.Grade.GradeAddDTO
+@{
+    ViewData["Title"] = "GradeAdd";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script src="~/lib/jquery/jquery.js"></script>
+<script src="~/microsoft/signalr/dist/browser/signalr.min.js"></script>
+<script>
+    $(document).ready(() => {
+
+        var connection = new signalR.HubConnectionBuilder().configureLogging(signalR.LogLevel.Debug).withAutomaticReconnect([1000, 1000, 3000, 3000]).withUrl("https://localhost:44398/GradeHub").build();
+        start();
+        function start() {
+            connection.start().then(() => {
+
+                console.log(connection.connectionState)
+            }).catch((err) => {
+                console.log(err);
+                setTimeout(() => start(), 2000)
+            });
+        }
+
+        $("#btnGradeName").click(() => {
+        connection.invoke("GradeAddMessageAsync", $("#txtName").val()).catch((err) =>
+            console.log(err));
+        })
+        connection.on("sendGradeMessage", (message) => {
+            alert(message);
+        })
+
+
+
+
+
+
+
+
+        ////connection.on("sendGradeMessage", (message) => {
+        ////    console.log(message);
+        ////})
+        //connection.invoke("GradeAddMessageAsync").catch((err) =>
+        //    console.log(err))
+        //$("#btnGradeName").click(() => {
+        //    connection.on("sendGradeMessage")            
+        //})
+    })
+</script>
+<div class="card m-3 ">
+    <h5 class="card-header">Sınıf Ekle</h5>
+    <div class="card-body demo-vertical-spacing demo-only-element">
+<form method="post" action="/Admin/Grade/GradeAdd/">
+    <div asp-validation-summary="ModelOnly"></div>
+    @Html.Label("Sınıf Adı")
+    @Html.TextBoxFor(x=>x.Name,new{@class="form-control",id="txtName"})
+    @Html.ValidationMessageFor(x=>x.Name,"",new{@class="text-danger"})
+    <br />
+    @Html.Label("Sınıf Kodu")
+    @Html.TextBoxFor(x=>x.Code,new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Code,"",new{@class="text-danger"})
+    <br />
+    <button id="btnGradeName" class="btn btn-primary">Ekle</button>
+</form>
+    </div>
+</div>

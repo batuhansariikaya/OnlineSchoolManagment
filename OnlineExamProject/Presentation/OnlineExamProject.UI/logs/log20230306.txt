@@ -1,0 +1,1426 @@
+2023-03-06 22:35:47.190 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-03-06 22:35:48.030 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-03-06 22:35:48.031 +03:00 [INF] Hosting environment: Development
+2023-03-06 22:35:48.031 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-03-06 22:35:48.101 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2023-03-06 22:35:48.440 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-03-06 22:35:49.009 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2023-03-06 22:35:49.028 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-03-06 22:35:49.030 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2023-03-06 22:35:49.051 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2023-03-06 22:35:49.220 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-03-06 22:35:49.235 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 210.8477ms
+2023-03-06 22:35:49.245 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-03-06 22:35:49.250 +03:00 [INF] HTTP GET /Admin/Home/Index responded 302 in 994.9454 ms
+2023-03-06 22:35:49.425 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 302 - - 1334.1821ms
+2023-03-06 22:35:49.495 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex - -
+2023-03-06 22:35:49.508 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-03-06 22:35:49.514 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-03-06 22:35:49.570 +03:00 [INF] Executing ViewResult, running view Login.
+2023-03-06 22:35:49.875 +03:00 [INF] Executed ViewResult - view Login executed in 345.5714ms.
+2023-03-06 22:35:49.875 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 361.0531ms
+2023-03-06 22:35:49.875 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-03-06 22:35:49.876 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 377.6374 ms
+2023-03-06 22:35:49.920 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex - - - 200 - text/html;+charset=utf-8 424.7766ms
+2023-03-06 22:35:50.232 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:35:50.255 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 16.0353ms
+2023-03-06 22:35:57.419 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex application/x-www-form-urlencoded 234
+2023-03-06 22:35:57.428 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-03-06 22:35:57.481 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineExamProject.Application.ViewModels.User.VM_Login, System.String) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-03-06 22:35:59.155 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:00.102 +03:00 [INF] Executed DbCommand (212ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:00.170 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:00.358 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-03-06 22:36:00.361 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-03-06 22:36:00.362 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-03-06 22:36:00.511 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-03-06 22:36:00.604 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:00.624 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.700 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.711 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.719 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.725 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.730 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.737 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.743 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.751 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.755 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.766 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.771 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.779 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.786 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.793 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.799 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.805 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.813 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.819 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.825 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.831 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.834 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.838 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.842 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.844 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.849 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.852 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.857 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.861 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.865 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.868 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.872 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.876 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.880 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.884 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.888 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.892 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.896 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.900 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.903 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.906 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.910 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.912 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.920 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.923 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.926 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.930 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.935 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.942 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.949 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.952 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.957 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.962 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.966 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.969 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.972 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.975 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.982 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:00.987 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2023-03-06 22:36:00.993 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2023-03-06 22:36:01.007 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-03-06 22:36:01.016 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:01.024 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Home/Index.
+2023-03-06 22:36:01.028 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 3546.1608ms
+2023-03-06 22:36:01.032 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-03-06 22:36:01.036 +03:00 [INF] HTTP POST /Auth/Login responded 302 in 3610.3282 ms
+2023-03-06 22:36:01.049 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex application/x-www-form-urlencoded 234 - 302 - - 3629.4763ms
+2023-03-06 22:36:01.054 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2023-03-06 22:36:01.065 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:01.066 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2023-03-06 22:36:01.071 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:01.164 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:01.240 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Questions] AS [q]
+2023-03-06 22:36:01.340 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Exams] AS [e]
+2023-03-06 22:36:01.389 +03:00 [INF] Executed DbCommand (38ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+2023-03-06 22:36:01.400 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:01.413 +03:00 [INF] Executing ViewResult, running view Index.
+2023-03-06 22:36:01.575 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__today_0='?' (DbType = DateTime2), @__last24_1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+WHERE ([t].[CreatedDate] <= @__today_0) AND ([t].[CreatedDate] >= @__last24_1)
+2023-03-06 22:36:01.938 +03:00 [INF] Executed ViewResult - view Index executed in 526.4551ms.
+2023-03-06 22:36:01.938 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 872.4289ms
+2023-03-06 22:36:01.939 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:01.939 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 883.1422 ms
+2023-03-06 22:36:01.945 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 200 - text/html;+charset=utf-8 890.2542ms
+2023-03-06 22:36:01.999 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:02.009 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 9.0352 ms
+2023-03-06 22:36:02.016 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 17.5719ms
+2023-03-06 22:36:02.206 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:02.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - -
+2023-03-06 22:36:02.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 27.8321ms
+2023-03-06 22:36:02.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - -
+2023-03-06 22:36:02.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - -
+2023-03-06 22:36:02.243 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/wallet.png responded 404 in 9.4904 ms
+2023-03-06 22:36:02.246 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - - - 404 - - 14.7454ms
+2023-03-06 22:36:02.246 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/paypal.png responded 404 in 3.4175 ms
+2023-03-06 22:36:02.247 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/chart.png responded 404 in 3.6535 ms
+2023-03-06 22:36:02.247 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - - - 404 - - 4.7545ms
+2023-03-06 22:36:02.248 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - - - 404 - - 4.9457ms
+2023-03-06 22:36:02.259 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - -
+2023-03-06 22:36:02.261 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-success.png responded 404 in 1.6931 ms
+2023-03-06 22:36:02.265 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - -
+2023-03-06 22:36:02.266 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - - - 404 - - 7.3099ms
+2023-03-06 22:36:02.267 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-warning.png responded 404 in 1.7106 ms
+2023-03-06 22:36:02.268 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - - - 404 - - 2.8341ms
+2023-03-06 22:36:10.601 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Account/Users - -
+2023-03-06 22:36:10.605 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI)'
+2023-03-06 22:36:10.614 +03:00 [INF] Route matched with {area = "Admin", action = "Users", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Users() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AccountController (OnlineExamProject.UI).
+2023-03-06 22:36:10.615 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:10.895 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:10.996 +03:00 [INF] Executed DbCommand (98ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:11.004 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:11.091 +03:00 [INF] Executed DbCommand (82ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:11.690 +03:00 [INF] Executed DbCommand (387ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-03-06 22:36:11.938 +03:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2023-03-06 22:36:11.973 +03:00 [INF] Executing ViewResult, running view Users.
+2023-03-06 22:36:11.985 +03:00 [INF] Executed ViewResult - view Users executed in 12.897ms.
+2023-03-06 22:36:11.985 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI) in 1370.8739ms
+2023-03-06 22:36:11.985 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI)'
+2023-03-06 22:36:11.986 +03:00 [INF] HTTP GET /Admin/Account/Users responded 200 in 1382.8533 ms
+2023-03-06 22:36:11.992 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Account/Users - - - 200 - text/html;+charset=utf-8 1390.9619ms
+2023-03-06 22:36:12.092 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:12.097 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 3.5574 ms
+2023-03-06 22:36:12.098 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:12.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 6.1751ms
+2023-03-06 22:36:12.107 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 9.2525ms
+2023-03-06 22:36:14.943 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Exam/Index/ - -
+2023-03-06 22:36:14.948 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:14.957 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Exam"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.ExamController (OnlineExamProject.UI).
+2023-03-06 22:36:14.957 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:14.960 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:15.163 +03:00 [INF] Executed DbCommand (202ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:15.169 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:15.212 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:15.238 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-03-06 22:36:15.254 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:15.351 +03:00 [INF] Executed DbCommand (56ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[AppUserId], [e].[CreatedDate], [e].[Description], [e].[GradeId], [e].[Name], [e].[Status], [e].[Time], [e].[UpdatedDate], [e].[UserId], [q].[Id], [q].[AnswerKey], [q].[CreatedDate], [q].[ExamId], [q].[OptionA], [q].[OptionB], [q].[OptionC], [q].[OptionD], [q].[QuestionHeader], [q].[Status], [q].[UpdatedDate]
+FROM [Exams] AS [e]
+LEFT JOIN [Questions] AS [q] ON [e].[Id] = [q].[ExamId]
+WHERE [e].[UserId] = @__id_0
+ORDER BY [e].[Id], [q].[Id]
+2023-03-06 22:36:15.355 +03:00 [INF] Executing ViewResult, running view Index.
+2023-03-06 22:36:15.367 +03:00 [INF] Executed ViewResult - view Index executed in 14.3476ms.
+2023-03-06 22:36:15.368 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI) in 410.6569ms
+2023-03-06 22:36:15.368 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:15.368 +03:00 [INF] HTTP GET /Admin/Exam/Index/ responded 200 in 423.4382 ms
+2023-03-06 22:36:15.377 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Exam/Index/ - - - 200 - text/html;+charset=utf-8 434.6062ms
+2023-03-06 22:36:15.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:15.432 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:15.441 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 7.8759 ms
+2023-03-06 22:36:15.442 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 9.4907ms
+2023-03-06 22:36:15.443 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.2810ms
+2023-03-06 22:36:17.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Role/RoleList - -
+2023-03-06 22:36:17.899 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.RoleController.RoleList (OnlineExamProject.UI)'
+2023-03-06 22:36:17.904 +03:00 [INF] Route matched with {area = "Admin", action = "RoleList", controller = "Role"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RoleList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.RoleController (OnlineExamProject.UI).
+2023-03-06 22:36:17.905 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:17.911 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:18.056 +03:00 [INF] Executed DbCommand (143ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:18.061 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:18.090 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:18.164 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-03-06 22:36:18.177 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2023-03-06 22:36:18.181 +03:00 [INF] Executing ViewResult, running view RoleList.
+2023-03-06 22:36:18.201 +03:00 [INF] Executed ViewResult - view RoleList executed in 21.3053ms.
+2023-03-06 22:36:18.202 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.RoleController.RoleList (OnlineExamProject.UI) in 297.0013ms
+2023-03-06 22:36:18.202 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.RoleController.RoleList (OnlineExamProject.UI)'
+2023-03-06 22:36:18.202 +03:00 [INF] HTTP GET /Admin/Role/RoleList responded 200 in 305.7252 ms
+2023-03-06 22:36:18.206 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Role/RoleList - - - 200 - text/html;+charset=utf-8 311.7306ms
+2023-03-06 22:36:18.256 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:18.258 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.6753 ms
+2023-03-06 22:36:18.259 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 3.8860ms
+2023-03-06 22:36:18.260 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:18.265 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 8.4231ms
+2023-03-06 22:36:19.695 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - -
+2023-03-06 22:36:19.700 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2023-03-06 22:36:19.708 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2023-03-06 22:36:19.708 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:19.711 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:19.713 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:19.722 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:19.769 +03:00 [INF] Executed DbCommand (44ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:19.845 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-03-06 22:36:19.894 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[IsActive], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2023-03-06 22:36:20.051 +03:00 [INF] Executed DbCommand (126ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.105 +03:00 [INF] Executed DbCommand (42ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.283 +03:00 [INF] Executed DbCommand (151ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.299 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:20.427 +03:00 [INF] Executed DbCommand (118ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.433 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.524 +03:00 [INF] Executed DbCommand (89ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.565 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:20.668 +03:00 [INF] Executed DbCommand (101ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.701 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.752 +03:00 [INF] Executed DbCommand (49ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.756 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:20.759 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.761 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.763 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.765 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:20.767 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.770 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.772 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.774 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:20.776 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.777 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.780 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.783 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:20.790 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.792 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.797 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.803 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:20.809 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.844 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:20.938 +03:00 [INF] Executed DbCommand (92ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:20.972 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.004 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.006 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.008 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.010 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.012 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.013 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.015 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.020 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.022 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.024 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.026 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.028 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.031 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.033 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.037 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.039 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.041 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.044 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.046 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.048 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.053 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.055 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.057 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.060 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.069 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.076 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.079 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.083 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.087 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.090 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.094 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.096 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.101 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.108 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.112 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.116 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.121 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.127 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.132 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.135 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.138 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.141 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.143 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.146 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.148 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.151 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.154 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.157 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.160 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.162 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.165 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.167 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.173 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.177 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.180 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.182 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.188 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.191 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.195 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.197 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.199 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.203 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.205 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.207 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.211 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.213 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.215 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.220 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.223 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.227 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.230 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.233 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.237 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.239 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.241 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.244 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.247 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.249 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.254 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.261 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.264 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.268 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.280 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.282 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.296 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.309 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.315 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.328 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.333 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.345 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2023-03-06 22:36:21.353 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Endpoints] AS [e]
+        WHERE [e].[Name] = @___action_Name_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-03-06 22:36:21.358 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@___action_Name_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+FROM [Endpoints] AS [e]
+WHERE [e].[Name] = @___action_Name_0
+2023-03-06 22:36:21.396 +03:00 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+2023-03-06 22:36:21.398 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2023-03-06 22:36:21.415 +03:00 [INF] Executed ViewResult - view EndpointsList executed in 18.4269ms.
+2023-03-06 22:36:21.416 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 1707.748ms
+2023-03-06 22:36:21.416 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2023-03-06 22:36:21.416 +03:00 [INF] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList/ responded 200 in 1717.7183 ms
+2023-03-06 22:36:21.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - - - 200 - text/html;+charset=utf-8 1732.5848ms
+2023-03-06 22:36:21.525 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:21.540 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:21.542 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.6271 ms
+2023-03-06 22:36:21.543 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 3.0654ms
+2023-03-06 22:36:21.559 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 33.7430ms
+2023-03-06 22:36:25.164 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - -
+2023-03-06 22:36:25.169 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-03-06 22:36:25.174 +03:00 [INF] Route matched with {area = "Admin", action = "GradeList", controller = "Grade"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GradeList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.GradeController (OnlineExamProject.UI).
+2023-03-06 22:36:25.174 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:25.177 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:25.195 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:25.203 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:25.213 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:25.272 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-03-06 22:36:25.278 +03:00 [INF] Executing ViewResult, running view GradeList.
+2023-03-06 22:36:25.375 +03:00 [INF] Executed DbCommand (83ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [g].[Id], [g].[Code], [g].[CreatedDate], [g].[Name], [g].[Status], [g].[UpdatedDate]
+FROM [Grades] AS [g]
+2023-03-06 22:36:25.412 +03:00 [INF] Executed ViewResult - view GradeList executed in 135.8934ms.
+2023-03-06 22:36:25.413 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI) in 238.864ms
+2023-03-06 22:36:25.413 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-03-06 22:36:25.413 +03:00 [INF] HTTP GET /Admin/Grade/GradeList responded 200 in 246.3568 ms
+2023-03-06 22:36:25.416 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - - - 200 - text/html;+charset=utf-8 252.2580ms
+2023-03-06 22:36:25.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:25.512 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:25.517 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.7522 ms
+2023-03-06 22:36:25.518 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 7.1158ms
+2023-03-06 22:36:25.527 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 15.9148ms
+2023-03-06 22:36:31.635 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Exam/Index/ - -
+2023-03-06 22:36:31.644 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:31.646 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Exam"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.ExamController (OnlineExamProject.UI).
+2023-03-06 22:36:31.647 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:31.651 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:31.664 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:31.672 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:31.688 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:31.709 +03:00 [INF] Executed DbCommand (19ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-03-06 22:36:31.721 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:31.738 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[AppUserId], [e].[CreatedDate], [e].[Description], [e].[GradeId], [e].[Name], [e].[Status], [e].[Time], [e].[UpdatedDate], [e].[UserId], [q].[Id], [q].[AnswerKey], [q].[CreatedDate], [q].[ExamId], [q].[OptionA], [q].[OptionB], [q].[OptionC], [q].[OptionD], [q].[QuestionHeader], [q].[Status], [q].[UpdatedDate]
+FROM [Exams] AS [e]
+LEFT JOIN [Questions] AS [q] ON [e].[Id] = [q].[ExamId]
+WHERE [e].[UserId] = @__id_0
+ORDER BY [e].[Id], [q].[Id]
+2023-03-06 22:36:31.739 +03:00 [INF] Executing ViewResult, running view Index.
+2023-03-06 22:36:31.741 +03:00 [INF] Executed ViewResult - view Index executed in 2.7663ms.
+2023-03-06 22:36:31.742 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI) in 95.4084ms
+2023-03-06 22:36:31.742 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:31.742 +03:00 [INF] HTTP GET /Admin/Exam/Index/ responded 200 in 103.6791 ms
+2023-03-06 22:36:31.748 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Exam/Index/ - - - 200 - text/html;+charset=utf-8 112.6475ms
+2023-03-06 22:36:31.876 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:31.882 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.7147 ms
+2023-03-06 22:36:31.883 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:31.884 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 8.2400ms
+2023-03-06 22:36:31.900 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 16.4990ms
+2023-03-06 22:36:33.462 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Question/Index - -
+2023-03-06 22:36:33.468 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:33.488 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Question"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(OnlineExamProject.Application.Features.Queries.Question.GetAllQuestion.GetAllQuestionQueryRequest) on controller OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController (OnlineExamProject.UI).
+2023-03-06 22:36:33.489 +03:00 [INF] Authorization was successful.
+2023-03-06 22:36:33.498 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-03-06 22:36:33.505 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-03-06 22:36:33.515 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-03-06 22:36:33.523 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-03-06 22:36:33.537 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__code_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[ActionType], [t].[Code], [t].[CreatedDate], [t].[Definition], [t].[HttpType], [t].[MenuId], [t].[Name], [t].[Status], [t].[UpdatedDate], [t0].[ActionsId], [t0].[RolesId], [t0].[Id], [t0].[ConcurrencyStamp], [t0].[CreatedDate], [t0].[IsActive], [t0].[Name], [t0].[NormalizedName]
+FROM (
+    SELECT TOP(1) [e].[Id], [e].[ActionType], [e].[Code], [e].[CreatedDate], [e].[Definition], [e].[HttpType], [e].[MenuId], [e].[Name], [e].[Status], [e].[UpdatedDate]
+    FROM [Endpoints] AS [e]
+    WHERE [e].[Code] = @__code_0
+) AS [t]
+LEFT JOIN (
+    SELECT [a].[ActionsId], [a].[RolesId], [a0].[Id], [a0].[ConcurrencyStamp], [a0].[CreatedDate], [a0].[IsActive], [a0].[Name], [a0].[NormalizedName]
+    FROM [AppRoleEndpoint] AS [a]
+    INNER JOIN [AspNetRoles] AS [a0] ON [a].[RolesId] = [a0].[Id]
+) AS [t0] ON [t].[Id] = [t0].[ActionsId]
+ORDER BY [t].[Id], [t0].[ActionsId], [t0].[RolesId], [t0].[Id]
+2023-03-06 22:36:33.595 +03:00 [INF] Executing ViewResult, running view Index.
+2023-03-06 22:36:33.621 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [e].[Id], [e].[Name], [e].[Description]
+FROM [Exams] AS [e]
+2023-03-06 22:36:33.626 +03:00 [INF] Executed ViewResult - view Index executed in 32.0428ms.
+2023-03-06 22:36:33.627 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI) in 138.2877ms
+2023-03-06 22:36:33.627 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI)'
+2023-03-06 22:36:33.627 +03:00 [INF] HTTP GET /Admin/Question/Index responded 200 in 162.7430 ms
+2023-03-06 22:36:33.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Question/Index - - - 200 - text/html;+charset=utf-8 170.6176ms
+2023-03-06 22:36:33.693 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-03-06 22:36:33.695 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.5857 ms
+2023-03-06 22:36:33.696 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 2.9114ms
+2023-03-06 22:36:33.700 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-03-06 22:36:33.706 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 3.1516ms

@@ -1,0 +1,16 @@
+﻿@*@model OnlineExamProject.Application.ViewModels.Teacher.VM_TeacherAdd
+*@
+@model OnlineExamProject.Domain.Entities.Teacher
+@{
+    ViewData["Title"] = "AddTeacher";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>AddTeacher</h1>
+<form action="/Admin/Teacher/AddTeacher/" method="post">
+    @Html.HiddenFor(x=>x.Id)
+    @Html.TextBoxFor(x=>x.Name)
+    @Html.TextBoxFor(x=>x.Surname)
+    <button type="submit">ekle</button>
+</form>
+

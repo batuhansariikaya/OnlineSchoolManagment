@@ -1,0 +1,65 @@
+﻿@using OnlineExamProject.Application.DTOs.Configuration
+@model List<Menu>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="m-5">
+<div class="card"> 
+    <div class="table-responsive text-nowrap">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+
+                    <th>Controller Name</th>
+                    <th>Controller Definitions</th>
+                </tr>
+            </thead>
+            <tbody class="table-border-bottom-0">
+                    @foreach (var name in Model)
+                    {
+                        <tr>
+                            <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@name.Name</strong></td>
+                            @foreach (var action in name.Actions)
+                            {
+                                    <td><a href="/Admin/AuthorizationEndpoint/AssignRoletoEndpoint/" class="btn btn-secondary"   data-bs-toggle="modal" data-bs-target="#assignRole">@action.Definition (@action.HttpType)</a></td>
+                            }
+                        </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+            
+
+                <div class="modal fade" id="assignRole" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Rol Ekle</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Kapat"></button>
+            </div>
+            <form action="/Admin/AuthorizationEndpoint/AssignRoletoEndpoint/" method="post">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col mb-3">
+                      
+                    </div>
+                </div>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    Kapat
+                </button>
+                <button type="submit"  class="btn btn-primary">Ekle</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>       

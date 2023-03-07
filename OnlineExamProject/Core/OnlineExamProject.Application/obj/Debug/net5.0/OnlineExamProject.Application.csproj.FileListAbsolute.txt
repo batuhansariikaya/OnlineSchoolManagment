@@ -1,0 +1,15 @@
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\bin\Debug\net5.0\OnlineExamProject.Application.deps.json
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\bin\Debug\net5.0\OnlineExamProject.Application.dll
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\bin\Debug\net5.0\OnlineExamProject.Application.pdb
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\bin\Debug\net5.0\OnlineExamProject.Domain.dll
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\bin\Debug\net5.0\OnlineExamProject.Domain.pdb
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.csproj.AssemblyReference.cache
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.AssemblyInfoInputs.cache
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.AssemblyInfo.cs
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.csproj.CoreCompileInputs.cache
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.csproj.CopyComplete
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.dll
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\refint\OnlineExamProject.Application.dll
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\OnlineExamProject.Application.pdb
+C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Application\obj\Debug\net5.0\ref\OnlineExamProject.Application.dll

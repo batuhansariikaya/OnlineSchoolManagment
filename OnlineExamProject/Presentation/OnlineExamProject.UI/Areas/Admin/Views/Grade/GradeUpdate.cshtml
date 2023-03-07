@@ -1,0 +1,25 @@
+﻿@model OnlineExamProject.Domain.Entities.Grade
+@{
+	ViewData["Title"] = "Sınıf Güncelleme";
+	Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+}
+
+<div class="card m-3 ">
+	<h5 class="card-header">Sınıf Ekle</h5>
+	<div class="card-body demo-vertical-spacing demo-only-element">
+		<form method="post" action="/Admin/Grade/GradeUpdate/">
+		<div asp-validation-summary="ModelOnly"></div>
+			@Html.Label("Sınıf Adı")
+			@Html.HiddenFor(x=>x.Id)
+			@Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+			@Html.Label("Sınıf Kodu")
+			@Html.TextBoxFor(x => x.Code, new { @class = "form-control" })
+			@Html.Label("Sınıf Durumu")
+			@Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+			<br />
+			<button class="btn btn-primary">Ekle</button>
+		</form>
+	</div>
+</div>
+

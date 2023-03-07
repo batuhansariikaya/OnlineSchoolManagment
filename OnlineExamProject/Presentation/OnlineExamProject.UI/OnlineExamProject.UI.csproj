@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\sneat\.github\workflows\handle-new-issue-comment.yml" />
+    <None Include="wwwroot\sneat\.github\workflows\handle-new-issue.yml" />
+    <None Include="wwwroot\sneat\.github\workflows\issue-staler.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.4.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.Redis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="6.0.9" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="NToastNotify" Version="8.0.0" />
+    <PackageReference Include="Serilog" Version="2.12.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
+    <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.8.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.2.0" />
+    <PackageReference Include="SmartBreadcrumbs" Version="3.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\OnlineExamProject.Application\OnlineExamProject.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\OnlineExamProject.Infrastructure\OnlineExamProject.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\OnlineExamProject.Persistence\OnlineExamProject.Persistence.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\OnlineExamProject.SİgnalR\OnlineExamProject.SignalR.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Middlewares\" />
+  </ItemGroup>
+
+</Project>

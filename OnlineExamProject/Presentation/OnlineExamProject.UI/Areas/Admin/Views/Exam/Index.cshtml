@@ -1,0 +1,62 @@
+﻿@using OnlineExamProject.Domain.Entities
+@model List<Exam>
+@{
+    ViewData["Title"] = "Sınavlar";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="card" style="margin:30px;">
+        <div class="table-responsive text-nowrap">
+            <table class="table">
+                <thead class="table-light">
+                    <tr>
+                        <th>Sınav</th>
+                        <th>Açıklama</th>
+                        <th>Kayıt Tarihi</th>
+                        <th>Süre</th>
+                        <th>Öğretmen</th>
+                        <th>Durum</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                    @{
+                         var result= Model.Count == 0 ? "Oluşturmuş olduğunuz sınav bulunmamaktadır!" : "";
+                         <p>@result</p>
+                    }
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><i class="fab fa-angular fa-lg texts-danger"></i> @item.Name</td>
+                            <td>@item.Description</td>
+                            <td>tarih</td>
+                            <td>@item.Time</td>
+                            <td>@item.UserId</td>
+                            @if(item.Status)
+                            {
+                                <td><span class="badge bg-label-success me-1">Aktif</span></td>
+
+                            }
+                            else
+                            {
+                                <td><span class="badge bg-label-danger me-1">Pasif</span></td>
+
+                            }
+                            <td>
+                                <a href="/Admin/Exam/ExamUpdate/@item.Id"><i class="bx bx-edit"></i></a>
+                                <a href="/Admin/Exam/Delete/@item.Id"><i class="bx bx-trash"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+    <div class="float-right" style="float:right;">
+        <a href="/Admin/Exam/AddExam" class="btn btn-primary">Sınav Ekle</a>
+    </div>
+</div>
+
+

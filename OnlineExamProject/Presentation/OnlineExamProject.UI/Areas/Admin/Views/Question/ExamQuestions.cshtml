@@ -1,0 +1,38 @@
+﻿@model OnlineExamProject.Application.ViewModels.Question.VM_QuestionAdd
+@{
+    ViewData["Title"] = ViewBag.questionHeader + " Sınav Sorusu Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="card m-3 ">
+    <h5 class="card-header">@ViewBag.questionHeader Sınav Sorusu Ekleme</h5>
+    <div class="card-body demo-vertical-spacing demo-only-element">
+        <form action="/Admin/Question/ExamQuestions/" method="post">
+            <div asp-validation-summary="ModelOnly"></div>
+            @Html.Label("Soru Başlığı")
+            @Html.TextBoxFor(x=>x.QuestionHeader,new{@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.QuestionHeader,"",new{@class="text-danger"})
+            @Html.Label("A şıkkı")
+            @Html.TextBoxFor(x=>x.OptionA,new{@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.OptionA,"",new{@class="text-danger"})
+            @Html.Label("B şıkkı")
+            @Html.TextBoxFor(x=>x.OptionB,new{@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.OptionB,"",new{@class="text-danger"})
+            @Html.Label("C şıkkı")
+            @Html.TextBoxFor(x=>x.OptionC,new{@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.OptionC,"",new{@class="text-danger"})
+            @Html.Label("D şıkkı")
+            @Html.TextBoxFor(x=>x.OptionD,new{@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.OptionD,"",new{@class="text-danger"})
+            @Html.Label("Doğru cevap şık numarası")
+            @Html.TextBoxFor(x=>x.AnswerKey,new{@class="form-control"})
+            @Html.ValidationMessageFor(x=>x.AnswerKey,"",new{@class="text-danger"})
+
+            <input type="hidden" name="ExamId" value="@ViewBag.examId" />
+            <br />
+            <button class="btn rounded-pill btn-warning float-right">Ekle</button>
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,80 @@
+﻿@using OnlineExamProject.Domain.Entities.Identity
+@model List<AppRole>
+@{
+    ViewData["Title"] = "Rol Listesi";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4">
+        <span class="text-muted fw-light">Kullanıcı Yönetimi /</span> Kullanıcılar
+    </h4>
+    <!-- Basic Bootstrap Table -->
+    <div class="card ">
+        <div class="table-responsive text-nowrap m-5">
+
+            <button type="button" class="btn btn-success mb-3" data-bs-toggle="modal"
+                    data-bs-target="#basicModal">
+                Rol Ekle <i class="bx bx-plus"></i>
+            </button>
+
+            <table class="table table-bordered" id="usersTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Rol Adı</th>
+                        <th>Oluşturulma Tarihi</th>
+                        <th>İşlemler</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <th>@item.Id</th>
+                            <td>@item.Name</td>
+                            <td>@item.CreatedDate</td>
+                            <td>
+                                <a href="/Admin/Role/UpdateRole/@item.Id" class="btn btn-primary btn-sm"><i class="bx bxs-edit"></i></a>
+                                <a href="/Admin/Role/DeleteRole/@item.Id" class="btn btn-danger btn-sm"><i class="bx bx-minus-circle"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="basicModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel1">Rol Ekle</h5>
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Kapat"></button>
+            </div>
+            <form action="/Admin/Role/CreateRole/" method="post">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col mb-3">
+                        <label for="nameBasic" class="form-label">Rol Adı:</label>
+                        <input type="text" name="Name" id="nameBasic" class="form-control" placeholder="Rol Girin.." />
+                    </div>
+                </div>                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                    Kapat
+                </button>
+                <button type="submit"  class="btn btn-primary">Ekle</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>                 

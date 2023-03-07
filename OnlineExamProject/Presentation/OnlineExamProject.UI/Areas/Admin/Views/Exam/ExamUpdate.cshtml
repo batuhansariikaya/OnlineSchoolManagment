@@ -1,0 +1,24 @@
+﻿@model OnlineExamProject.Domain.Entities.Exam
+@{
+    ViewData["Title"] = "Sınav Güncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div class="card m-3 ">
+    <h5 class="card-header">@ViewBag.examName Sınav Bilgisi Güncelleme</h5>
+    <div class="card-body demo-vertical-spacing demo-only-element">
+<form action="/Admin/Exam/ExamUpdate/" method="post" class="m-3">
+    <div asp-validation-summary="ModelOnly"></div>
+            @Html.TextBoxFor(x=>x.Name,new{@class="form-control"} )           
+            <br />
+            @Html.TextBoxFor(x=>x.Description,new{@class="form-control"})    
+            <br />
+            @Html.TextBoxFor(x=>x.Time,new{@class="form-control"})
+            <br />
+           @* @Html.TextBoxFor(x=>x.TeacherId,new{@class="form-control"})*@
+            <br />
+    <button type="submit" class="btn btn-primary">Gönder</button>
+</form>  
+</div>
+</div>
+
+

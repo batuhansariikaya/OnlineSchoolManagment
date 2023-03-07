@@ -1,0 +1,89 @@
+﻿@model OnlineExamProject.Domain.Entities.Exam
+@{
+    ViewData["Title"] = "Sınav Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script src="~/jquery/jquery.min.js"></script>
+<script src="~/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js" type="text/javascript"></script>
+<h1>AddExam</h1>
+<form action="/Admin/Exam/AddExam/" method="post" class="m-3">
+   <div asp-validation-summary="ModelOnly"></div>
+ 
+    @Html.TextBoxFor(x=>x.Name,new{@class="form-control"} )
+    @Html.ValidationMessageFor(x=>x.Name)
+  
+    @Html.TextBoxFor(x=>x.Description,new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Description)
+    
+    @Html.TextBoxFor(x=>x.Time,new{@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Time)
+   
+  @*  @Html.TextBoxFor(x=>x.TeacherId,new{@class="form-control"})*@
+   
+    
+     <input type="text" id="txtMessage"> <button>Gönder</button>
+   <ul id="messages">
+</form>  
+
+
+
+<script>
+//(function setupConnection() {
+//var connection = new signalR.HubConnectionBuilder().withUrl("/exam-hub").build();
+//connection.on("receiveExamAddedMessage")
+
+//connection.start().catch(err => console.error(err.toString())).then(response => console.log("connected"));
+//}) ();
+
+//setupConnection();
+
+
+(function setupConnection() {
+      var connection = new signalR.HubConnectionBuilder()
+         .withUrl("https://localhost:44398/exam-hub")
+         .build();
+ 
+     connection.start().catch(err => console.error(err.toString())).then(response => console.log("connected"));
+ 
+      $("button").click(() => {
+         let message = $("#txtMessage").val();
+         connection.invoke("ProductAddedMessageAsync", message)
+            .catch(error => console.log("Mesaj gönderilirken hata alınmıştır."));
+      });
+ 
+      connection.on("receiveExamAddedMessage", message => {
+         $("#messages").append(`${message}<br>`);
+      });
+ 
+ }) ();
+setupConnection();
+//const connection = new signalR.HubConnectionBuilder()
+//        .withUrl("/exam-hub")      
+//        .build();
+//connection.on("receiveExamAddedMessage")
+      
+//    connection.start()
+//        .then(() => console.log('connected!'))
+//        .catch(console.error);
+        
+//   document.getElementById("text").value=@ViewBag.data
+//    });
+//const connection = new signalR.HubConnectionBuilder()
+//    .withUrl("/exam-hub")
+//    .build();
+ 
+//connection.on("receiveExamAddedMessage" => {
+   
+//    const li = document.createElement("li");
+//    li.textContent = encodedMsg;
+//    document.getElementById("text").appendChild(li);
+//});
+
+//connection.start().catch(err => console.error(err.toString()));
+
+//Send the message  
+
+
+</script>

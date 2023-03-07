@@ -1,0 +1,72 @@
+﻿@using OnlineExamProject.Domain.Entities
+@model IQueryable<Exam>
+@{
+    ViewData["Title"] = "Sorular";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<br />
+@foreach (var item in Model)
+{
+
+    <div class="card m-2">
+        <div class="card-body">
+            <h5 class="card-title">@item.Name</h5>
+            <p class="card-text">@item.Description Soruları görmek ve soru eklemek için butona tıklayın.</p>
+            <div class="float-right" style="float:right; vertical-align:center">
+                <a href="/Admin/Question/ExamQuestions/@item.Id/" class="btn rounded-pill btn-warning">+ Ekle</a>
+                <a href="/Admin/Question/ExamQuestions/@item.Id"  class="btn rounded-pill btn-primary">Listele</a>
+            </div>
+        </div>
+    </div> 
+}
+<br />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <div class="content-wrapper">
+<div class="card" style="margin:30px;">
+                <div class="table-responsive text-nowrap">
+                  <table class="table">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Soru</th>
+                        <th>Bölüm</th>
+                        <th>Kayıt Tarihi</th>
+                        <th>Durum</th>
+                        <th>İşlemler</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-border-bottom-0">
+                        @foreach(var item in Model){
+                      <tr>
+                        <td><i class="fab fa-angular fa-lg texts-danger"></i> @item.QuestionHeader</td>
+                        <td>@item.Exam.Name</td>
+                        <td>@item.CreatedDate</td>
+                        <td><span class="badge bg-label-success me-1">Aktif</span></td>
+                        <td><a href="#"><i class="bx bx-edit"></i></a>
+                         <a href="#"><i class="bx bx-trash"></i></a>
+                        </td>
+                      </tr>
+                      }
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+</div>
+
+*@

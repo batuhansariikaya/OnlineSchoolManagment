@@ -1,0 +1,10 @@
+2022-12-28 20:20:09.791 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-28 20:20:10.893 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-28 20:20:10.894 +03:00 [INF] Hosting environment: Development
+2022-12-28 20:20:10.894 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2022-12-28 20:20:10.975 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2022-12-28 20:20:11.282 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2022-12-28 20:20:11.329 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2022-12-28 20:20:11.333 +03:00 [INF] HTTP GET /Admin/Home/Index responded 302 in 250.8135 ms
+2022-12-28 20:20:11.363 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 0 - - 394.8942ms

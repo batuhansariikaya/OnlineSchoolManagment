@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "jquery@3.6.1",
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "@microsoft/signalr@7.0.2",
+      "destination": "wwwroot/microsoft/signalr/",
+      "files": [
+        "dist/browser/signalr.js",
+        "dist/browser/signalr.js.map",
+        "dist/browser/signalr.min.js",
+        "dist/browser/signalr.min.js.map"
+      ]
+    }
+  ]
+}

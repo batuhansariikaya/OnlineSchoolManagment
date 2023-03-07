@@ -1,0 +1,26 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+<div class="col-sm-7">
+                        <div class="card-body">
+                        @if(ViewBag.userCount>0){
+                              <h5 class="card-title text-primary">Tebrikler Admin! 🎉</h5>
+                          <p class="mb-4">
+                              
+                           Son 24 saatte @ViewBag.userCount kullanıcı kazandın. Büyümeye Devam Et!
+                          </p>
+
+                          <a href="javascript:;" class="btn btn-sm btn-outline-primary">İstatistikleri Gör</a>
+                        }
+                        else{
+                              <h5 class="card-title text-primary">Üzgünüm! </h5>
+                           <p class="mb-4">                              
+                         Büyümek için daha fazla kişiyle etkileşime geç. 
+                          </p>
+
+                          <a href="javascript:;" class="btn btn-sm btn-outline-primary">İstatistikleri Gör</a>
+                        }
+                            
+                        </div>
+                      </div>

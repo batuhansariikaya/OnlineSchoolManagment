@@ -1,0 +1,27 @@
+2023-01-11 20:53:19.788 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-01-11 20:53:22.121 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-11 20:53:22.122 +03:00 [INF] Hosting environment: Development
+2023-01-11 20:53:22.122 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-01-11 20:53:22.325 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/ - -
+2023-01-11 20:53:22.986 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-01-11 20:53:23.325 +03:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OnlineExamProject.UI.Controllers.HomeController (OnlineExamProject.UI).
+2023-01-11 20:53:23.367 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-01-11 20:53:23.370 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2023-01-11 20:53:23.382 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2023-01-11 20:53:23.991 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-01-11 20:53:24.005 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI) in 664.4575ms
+2023-01-11 20:53:24.014 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-01-11 20:53:24.018 +03:00 [INF] HTTP GET / responded 302 in 1259.0843 ms
+2023-01-11 20:53:24.153 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2F - -
+2023-01-11 20:53:24.612 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-01-11 20:53:24.620 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-01-11 20:53:25.153 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/ - - - 302 - - 2840.1282ms
+2023-01-11 20:53:25.817 +03:00 [INF] Executing ViewResult, running view Login.
+2023-01-11 20:53:26.220 +03:00 [INF] Executed ViewResult - view Login executed in 468.8224ms.
+2023-01-11 20:53:26.223 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 1602.5422ms
+2023-01-11 20:53:26.224 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-01-11 20:53:26.224 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 1863.9934 ms
+2023-01-11 20:53:26.257 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 2104.4809ms
+2023-01-11 20:53:26.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-01-11 20:53:26.480 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 23.6825ms

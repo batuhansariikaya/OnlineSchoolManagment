@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Index</h1>
+@section Scripts{
+ <script src="~/lib/microsoft/signalr/dist/browser/signalr.min.js"></script>
+}
+<div class="row">
+    <div class="col-md-8 offset-2">
+        <div id="connectionState">
+        </div>
+        <div class="mb-3">
+            <label for="name" class="form-label">Mesaj :</label>
+            <input type="text" class="form-control" id="txtName" placeholder="">
+        </div>
+        <hr />
+        <button class="btn btn-primary" id="btnSenderName">Gönder</button>
+        <hr />
+        <div class="clearfix"></div>
+        <div class="col-md-8">
+            <ul class="list-group" id="listName">
+            </ul>
+        </div>
+    </div>
+</div>

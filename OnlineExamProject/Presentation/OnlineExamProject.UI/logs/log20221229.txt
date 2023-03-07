@@ -1,0 +1,1933 @@
+2022-12-29 19:09:03.098 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-29 19:09:03.899 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 19:09:03.899 +03:00 [INF] Hosting environment: Development
+2022-12-29 19:09:03.900 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2022-12-29 19:09:03.951 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2022-12-29 19:09:04.225 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2022-12-29 19:09:04.257 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2022-12-29 19:09:04.263 +03:00 [INF] HTTP GET /Admin/Home/Index responded 302 in 219.5705 ms
+2022-12-29 19:09:04.353 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex - -
+2022-12-29 19:09:04.360 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 302 - - 416.5799ms
+2022-12-29 19:09:04.371 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2022-12-29 19:09:04.521 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2022-12-29 19:09:05.231 +03:00 [INF] Executing ViewResult, running view Login.
+2022-12-29 19:09:05.503 +03:00 [INF] Executed ViewResult - view Login executed in 270.7171ms.
+2022-12-29 19:09:05.517 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 993.9677ms
+2022-12-29 19:09:05.520 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2022-12-29 19:09:05.520 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 1163.9776 ms
+2022-12-29 19:09:05.550 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex - - - 200 - text/html;+charset=utf-8 1196.0375ms
+2022-12-29 19:09:06.003 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:09:06.070 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 52.1684ms
+2022-12-29 19:10:09.817 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51
+2022-12-29 19:10:09.828 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2022-12-29 19:10:09.875 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineExamProject.Application.ViewModels.User.VM_Login) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2022-12-29 19:10:11.289 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:10:12.337 +03:00 [INF] Executed DbCommand (422ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2022-12-29 19:10:12.416 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2022-12-29 19:10:12.661 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2022-12-29 19:10:12.664 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2022-12-29 19:10:12.664 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2022-12-29 19:10:12.821 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2022-12-29 19:10:12.958 +03:00 [INF] Executed DbCommand (73ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2022-12-29 19:10:12.976 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2022-12-29 19:10:13.033 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__role_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2022-12-29 19:10:13.046 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2022-12-29 19:10:13.053 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2022-12-29 19:10:13.119 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Home/Index.
+2022-12-29 19:10:13.121 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 3245.8036ms
+2022-12-29 19:10:13.123 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2022-12-29 19:10:13.126 +03:00 [INF] HTTP POST /Auth/Login/ responded 302 in 3300.5397 ms
+2022-12-29 19:10:13.136 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/Auth/Login/ application/x-www-form-urlencoded 51 - 302 - - 3318.6959ms
+2022-12-29 19:10:13.142 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2022-12-29 19:10:13.160 +03:00 [INF] Authorization was successful.
+2022-12-29 19:10:13.161 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2022-12-29 19:10:13.164 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2022-12-29 19:10:13.165 +03:00 [INF] Authorization was successful.
+2022-12-29 19:10:13.262 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:10:13.360 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Questions] AS [q]
+2022-12-29 19:10:13.453 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Exams] AS [e]
+2022-12-29 19:10:13.515 +03:00 [INF] Executed DbCommand (53ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+2022-12-29 19:10:13.520 +03:00 [INF] Executing ViewResult, running view Index.
+2022-12-29 19:10:13.596 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__today_0='?' (DbType = DateTime2), @__last24_1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+WHERE ([t].[CreatedDate] <= @__today_0) AND ([t].[CreatedDate] >= @__last24_1)
+2022-12-29 19:10:13.916 +03:00 [INF] Executed ViewResult - view Index executed in 397.1765ms.
+2022-12-29 19:10:13.916 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 751.9944ms
+2022-12-29 19:10:13.916 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2022-12-29 19:10:13.917 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 772.4861 ms
+2022-12-29 19:10:13.924 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 200 - text/html;+charset=utf-8 780.7819ms
+2022-12-29 19:10:14.009 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2022-12-29 19:10:14.018 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 7.3565 ms
+2022-12-29 19:10:14.022 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 11.9586ms
+2022-12-29 19:10:14.145 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:10:14.165 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 19.0468ms
+2022-12-29 19:10:14.218 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - -
+2022-12-29 19:10:14.220 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - -
+2022-12-29 19:10:14.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - -
+2022-12-29 19:10:14.224 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - -
+2022-12-29 19:10:14.242 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/chart.png responded 404 in 17.7532 ms
+2022-12-29 19:10:14.242 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-warning.png responded 404 in 21.2827 ms
+2022-12-29 19:10:14.242 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/paypal.png responded 404 in 23.6425 ms
+2022-12-29 19:10:14.242 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/wallet.png responded 404 in 19.2490 ms
+2022-12-29 19:10:14.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - - - 404 - - 24.7940ms
+2022-12-29 19:10:14.243 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - -
+2022-12-29 19:10:14.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - - - 404 - - 22.9964ms
+2022-12-29 19:10:14.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - - - 404 - - 18.8731ms
+2022-12-29 19:10:14.243 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - - - 404 - - 20.9246ms
+2022-12-29 19:10:14.245 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-success.png responded 404 in 1.5520 ms
+2022-12-29 19:10:14.246 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - - - 404 - - 2.9835ms
+2022-12-29 19:10:14.386 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - -
+2022-12-29 19:10:14.390 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/wallet.png responded 404 in 3.2240 ms
+2022-12-29 19:10:14.392 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - - - 404 - - 5.8681ms
+2022-12-29 19:13:01.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - -
+2022-12-29 19:13:01.165 +03:00 [INF] Authorization was successful.
+2022-12-29 19:13:01.167 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:13:01.171 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2022-12-29 19:13:01.172 +03:00 [INF] Authorization was successful.
+2022-12-29 19:13:01.188 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:13:01.344 +03:00 [INF] Executed DbCommand (142ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2022-12-29 19:13:01.478 +03:00 [INF] Executed DbCommand (104ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:01.493 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:01.830 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2022-12-29 19:13:01.845 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 673.1171ms
+2022-12-29 19:13:01.846 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:13:01.873 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:01.848 +03:00 [ERR] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList/ responded 500 in 685.3295 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.ValueTuple`2[System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method420(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-12-29 19:13:01.971 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.ValueTuple`2[System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method420(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 19:13:02.004 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.011 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.026 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.039 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.046 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.059 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.067 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.072 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.077 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.083 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.091 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.103 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.108 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.110 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.120 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.126 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.128 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.134 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.138 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.142 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.146 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.153 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.155 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.161 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.168 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:13:02.178 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:13:02.190 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:13:02.225 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+2022-12-29 19:13:02.334 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - - - 500 - text/html;+charset=utf-8 1173.8461ms
+2022-12-29 19:13:02.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:13:02.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2022-12-29 19:13:02.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 20.5870ms
+2022-12-29 19:13:02.468 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.6846ms
+2022-12-29 19:13:02.767 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/favicon.ico - -
+2022-12-29 19:13:02.779 +03:00 [INF] The file /favicon.ico was not modified
+2022-12-29 19:13:02.781 +03:00 [INF] HTTP GET /favicon.ico responded 304 in 12.9249 ms
+2022-12-29 19:13:02.782 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/favicon.ico - - - 304 - image/x-icon 14.6927ms
+2022-12-29 19:15:05.680 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-29 19:15:07.324 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 19:15:07.325 +03:00 [INF] Hosting environment: Development
+2022-12-29 19:15:07.325 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2022-12-29 19:15:07.456 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - -
+2022-12-29 19:15:09.191 +03:00 [INF] Authorization was successful.
+2022-12-29 19:15:09.193 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:15:09.335 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2022-12-29 19:15:09.342 +03:00 [INF] Authorization was successful.
+2022-12-29 19:15:12.446 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:15:14.628 +03:00 [INF] Executed DbCommand (208ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2022-12-29 19:15:17.210 +03:00 [INF] Executed DbCommand (1,558ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:17.285 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:18.094 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2022-12-29 19:15:18.179 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 8823.01ms
+2022-12-29 19:15:18.184 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:15:19.459 +03:00 [INF] Executed DbCommand (1,420ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:18.188 +03:00 [ERR] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList/ responded 500 in 10495.7439 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-12-29 19:15:19.550 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 19:15:20.921 +03:00 [INF] Executed DbCommand (52ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:20.937 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:21.011 +03:00 [INF] Executed DbCommand (62ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:21.069 +03:00 [INF] Executed DbCommand (33ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:21.084 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:21.100 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:21.169 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:21.206 +03:00 [INF] Executed DbCommand (34ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:21.316 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:21.327 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:21.333 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:21.343 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:21.348 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:21.351 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:21.360 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:21.366 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:21.369 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:21.381 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:21.390 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:15:21.394 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:15:21.458 +03:00 [ERR] Connection ID "18014398511092597157", Request ID "800001a6-0000-fa00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The connection does not support MultipleActiveResultSets.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|15_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|15_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnCompleted()
+2022-12-29 19:15:21.497 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - - - 500 - text/html;+charset=utf-8 14050.3762ms
+2022-12-29 19:15:21.529 +03:00 [INF] Executed DbCommand (128ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:15:23.201 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:15:23.201 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2022-12-29 19:15:23.222 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.3343ms
+2022-12-29 19:15:23.281 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 79.7214ms
+2022-12-29 19:19:47.606 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-29 19:19:48.223 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 19:19:48.223 +03:00 [INF] Hosting environment: Development
+2022-12-29 19:19:48.224 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2022-12-29 19:19:48.301 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - -
+2022-12-29 19:19:48.875 +03:00 [INF] Authorization was successful.
+2022-12-29 19:19:48.878 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:19:48.931 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2022-12-29 19:19:48.934 +03:00 [INF] Authorization was successful.
+2022-12-29 19:19:50.402 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:19:51.118 +03:00 [INF] Executed DbCommand (186ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2022-12-29 19:19:51.491 +03:00 [INF] Executed DbCommand (79ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:51.509 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:51.876 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2022-12-29 19:19:51.912 +03:00 [INF] Executed DbCommand (72ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:51.922 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 2980.7827ms
+2022-12-29 19:19:51.926 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:19:52.019 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.026 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.035 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.044 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.048 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.053 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.060 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:51.930 +03:00 [ERR] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList responded 500 in 3551.3490 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.ValueTuple`2[System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-12-29 19:19:52.063 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.070 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.066 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.ValueTuple`2[System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 19:19:52.097 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.104 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.118 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.158 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.161 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.167 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.172 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.174 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.182 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.187 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.190 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.196 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.202 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.205 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.212 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.220 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:19:52.222 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:19:52.229 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:19:52.246 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+2022-12-29 19:19:52.499 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - - - 500 - text/html;+charset=utf-8 4208.1263ms
+2022-12-29 19:19:52.869 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:19:52.870 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2022-12-29 19:19:52.890 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 15.4239ms
+2022-12-29 19:19:52.939 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.6705ms
+2022-12-29 19:25:26.812 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-29 19:25:27.402 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 19:25:27.403 +03:00 [INF] Hosting environment: Development
+2022-12-29 19:25:27.403 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2022-12-29 19:25:27.443 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - -
+2022-12-29 19:25:28.118 +03:00 [INF] Authorization was successful.
+2022-12-29 19:25:28.120 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:25:28.189 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2022-12-29 19:25:28.194 +03:00 [INF] Authorization was successful.
+2022-12-29 19:25:29.637 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:25:30.529 +03:00 [INF] Executed DbCommand (114ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2022-12-29 19:25:30.924 +03:00 [INF] Executed DbCommand (92ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:30.947 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.337 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2022-12-29 19:25:31.374 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.382 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 3183.0164ms
+2022-12-29 19:25:31.385 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:25:31.465 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.471 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.479 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.486 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.488 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.496 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.388 +03:00 [ERR] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList responded 500 in 3873.8975 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.ValueTuple`2[System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-12-29 19:25:31.500 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.504 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.512 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.504 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.ValueTuple`2[System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]', but this ViewDataDictionary instance requires a model item of type 'System.ValueTuple`2[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Identity.AppRole]]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 19:25:31.543 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.547 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.562 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.581 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.584 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.598 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.607 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.623 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.817 +03:00 [INF] Executed DbCommand (184ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.841 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.849 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.854 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.865 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.868 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.878 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.885 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:25:31.888 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:25:31.905 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:25:31.933 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+2022-12-29 19:25:32.123 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - - - 500 - text/html;+charset=utf-8 4684.7608ms
+2022-12-29 19:25:32.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:25:32.402 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2022-12-29 19:25:32.434 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 27.3277ms
+2022-12-29 19:25:32.486 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 83.6374ms
+2022-12-29 19:27:23.332 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-29 19:27:23.930 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 19:27:23.930 +03:00 [INF] Hosting environment: Development
+2022-12-29 19:27:23.931 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2022-12-29 19:27:23.990 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - -
+2022-12-29 19:27:24.652 +03:00 [INF] Authorization was successful.
+2022-12-29 19:27:24.654 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:27:24.709 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2022-12-29 19:27:24.713 +03:00 [INF] Authorization was successful.
+2022-12-29 19:27:26.152 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:27:26.671 +03:00 [INF] Executed DbCommand (86ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2022-12-29 19:27:27.083 +03:00 [INF] Executed DbCommand (96ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.106 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.484 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2022-12-29 19:27:27.513 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.524 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 2804.076ms
+2022-12-29 19:27:27.528 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:27:27.595 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.604 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.615 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.623 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.635 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.653 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.532 +03:00 [ERR] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList responded 500 in 3441.8881 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-12-29 19:27:27.672 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 19:27:27.733 +03:00 [INF] Executed DbCommand (39ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.748 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.760 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.772 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.778 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.792 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.809 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.817 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.826 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.842 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.850 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.888 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.924 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.939 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.954 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.971 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:27.974 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:27.988 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:27.999 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:28.003 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:28.010 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:28.027 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+2022-12-29 19:27:28.157 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - - - 500 - text/html;+charset=utf-8 4174.9620ms
+2022-12-29 19:27:28.188 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - -
+2022-12-29 19:27:28.204 +03:00 [INF] Authorization was successful.
+2022-12-29 19:27:28.205 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:27:28.206 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2022-12-29 19:27:28.207 +03:00 [INF] Authorization was successful.
+2022-12-29 19:27:28.255 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:27:28.259 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2022-12-29 19:27:28.267 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:28.270 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:28.275 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2022-12-29 19:27:28.276 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:28.278 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 71.8732ms
+2022-12-29 19:27:28.279 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:27:28.280 +03:00 [ERR] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList responded 500 in 89.1589 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-12-29 19:27:28.288 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:28.287 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 19:27:28.293 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:28.318 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:28.325 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:27:28.337 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:27:28.353 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:27:28.366 +03:00 [ERR] Connection ID "17870283331606675624", Request ID "800000a9-0002-f800-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.InvalidOperationException: The connection does not support MultipleActiveResultSets.
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Rollback()
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose(Boolean disposing)
+   at Microsoft.Data.SqlClient.SqlInternalTransaction.Dispose()
+   at Microsoft.Data.SqlClient.SqlTransaction.Dispose(Boolean disposing)
+   at System.Data.Common.DbTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalTransaction.DisposeAsync()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.DisposeAsync()
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|15_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.<DisposeAsync>g__Await|15_0(Int32 i, ValueTask vt, List`1 toDispose)
+   at Microsoft.AspNetCore.Http.Features.RequestServicesFeature.<DisposeAsync>g__Awaited|9_0(RequestServicesFeature servicesFeature, ValueTask vt)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.FireOnCompleted()
+2022-12-29 19:27:28.404 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - - - 500 - text/html;+charset=utf-8 215.1978ms
+2022-12-29 19:27:28.508 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:27:28.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2022-12-29 19:27:28.524 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 11.5035ms
+2022-12-29 19:27:28.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.7454ms
+2022-12-29 19:27:28.824 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2022-12-29 19:27:28.824 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:27:28.839 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.5624ms
+2022-12-29 19:27:28.865 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.2482ms
+2022-12-29 19:28:52.324 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-12-29 19:28:53.174 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-29 19:28:53.175 +03:00 [INF] Hosting environment: Development
+2022-12-29 19:28:53.175 +03:00 [INF] Content root path: C:\Users\Batuhan\source\repos\OnlineExamProject\Presentation\OnlineExamProject.UI
+2022-12-29 19:28:53.217 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - -
+2022-12-29 19:28:53.730 +03:00 [INF] Authorization was successful.
+2022-12-29 19:28:53.733 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:28:53.791 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2022-12-29 19:28:53.795 +03:00 [INF] Authorization was successful.
+2022-12-29 19:28:55.595 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2022-12-29 19:28:56.154 +03:00 [INF] Executed DbCommand (94ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[CreatedDate], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+2022-12-29 19:28:56.664 +03:00 [INF] Executed DbCommand (163ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:56.691 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.190 +03:00 [INF] Executing ViewResult, running view EndpointsList.
+2022-12-29 19:28:57.243 +03:00 [INF] Executed DbCommand (98ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.243 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 3441.9397ms
+2022-12-29 19:28:57.247 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2022-12-29 19:28:57.258 +03:00 [ERR] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList responded 500 in 3975.0756 ms
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2022-12-29 19:28:57.375 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.386 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.374 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1+AsyncStateMachineBox`1[System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu],OnlineExamProject.Infrastructure.Services.Configuration.ApplicationService+<GetAuthorizeDefinitionEndpoints>d__7]', but this ViewDataDictionary instance requires a model item of type 'System.Collections.Generic.List`1[OnlineExamProject.Domain.Entities.Menu]'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method217(Closure , ViewDataDictionary )
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.CreateViewDataDictionary(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPageActivator.Activate(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|29_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.Policy.AuthorizationMiddlewareResultHandler.HandleAsync(RequestDelegate next, HttpContext context, AuthorizationPolicy policy, PolicyAuthorizationResult authorizeResult)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2022-12-29 19:28:57.421 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.441 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.451 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.472 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.486 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.495 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.519 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.536 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.546 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.574 +03:00 [INF] Executed DbCommand (15ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.587 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.601 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.616 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.623 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.626 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.637 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.644 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.650 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.656 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.671 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.677 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.695 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.710 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Menus] AS [m]
+        WHERE [m].[Name] = @__authorizeAttirbute_Menu_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2022-12-29 19:28:57.722 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__authorizeAttirbute_Menu_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+WHERE [m].[Name] = @__authorizeAttirbute_Menu_0
+2022-12-29 19:28:57.735 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Endpoints] ([ActionType], [Code], [CreatedDate], [Definition], [HttpType], [MenuId], [Name], [Status], [UpdatedDate])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+SELECT [Id]
+FROM [Endpoints]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-12-29 19:28:57.753 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [m].[Id], [m].[CreatedDate], [m].[Name], [m].[Status], [m].[UpdatedDate]
+FROM [Menus] AS [m]
+2022-12-29 19:28:57.778 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList - - - 500 - text/html;+charset=utf-8 4565.8099ms
+2022-12-29 19:28:57.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2022-12-29 19:28:57.850 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2022-12-29 19:28:57.866 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 9.4153ms
+2022-12-29 19:28:57.895 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 45.0405ms
