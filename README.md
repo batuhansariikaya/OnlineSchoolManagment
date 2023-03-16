@@ -10,3 +10,7 @@ Technologies and frameworks I use
 ⋅⋅* Auto Mapper
 ⋅⋅* Identity 
  
+- First item
+- Second item
+- Third item
+- Fourth item
