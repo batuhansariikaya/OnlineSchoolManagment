@@ -9,4 +9,5 @@ Technologies and frameworks I use
 - Fluent Validation
 - Auto Mapper
 - Identity 
- 
+- Redis 
+- SignalR 
