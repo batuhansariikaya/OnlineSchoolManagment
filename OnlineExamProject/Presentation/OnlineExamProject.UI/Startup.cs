@@ -1,9 +1,6 @@
 using AspNetCoreHero.ToastNotification;
 using AspNetCoreHero.ToastNotification.Extensions;
-using AspNetCoreHero.ToastNotification.Notyf.Models;
 using FluentValidation.AspNetCore;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,24 +9,19 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.Tokens;
 using OnlineExamProject.Application;
 using OnlineExamProject.Application.Validators.Grade;
-using OnlineExamProject.Application.Validators.Question;
-using OnlineExamProject.Domain.Entities.Identity;
 using OnlineExamProject.Infrastructure;
-using OnlineExamProject.Infrastructure.Filters;
 using OnlineExamProject.Persistence;
 using OnlineExamProject.SignalR;
 using OnlineExamProject.SignalR.Hubs;
 using OnlineExamProject.UI.Filters;
 using Serilog;
-using SmartBreadcrumbs.Extensions;
+
 using System;
+
 using System.Globalization;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace OnlineExamProject.UI
 {
@@ -76,7 +68,8 @@ namespace OnlineExamProject.UI
                 };
                 _.SlidingExpiration = true; //Expiration süresinin yarýsý kadar süre zarfýnda istekte bulunulursa eðer geri kalan yarýsýný tekrar sýfýrlayarak ilk ayarlanan süreyi tazeleyecektir.
                 _.ExpireTimeSpan = TimeSpan.FromMinutes(10); //CookieBuilder nesnesinde tanýmlanan Expiration deðerinin varsayýlan deðerlerle ezilme ihtimaline karþýn tekrardan Cookie vadesi burada da belirtiliyor.
-                _.AccessDeniedPath = new PathString("/Error/Error401/"); // yetkili sayfaya eriþmeye çalýþan yetkisiz kullanýcýyý yönlendireceðimiz sayfa
+                _.AccessDeniedPath = new PathString("/Error/Error401/");                               
+                // yetkili sayfaya eriþmeye çalýþan yetkisiz kullanýcýyý yönlendireceðimiz sayfa
 
             });
 
@@ -85,7 +78,7 @@ namespace OnlineExamProject.UI
                 var policy = new AuthorizationPolicyBuilder()
                 .RequireAuthenticatedUser()
                 .Build();
-                config.Filters.Add(new AuthorizeFilter(policy));
+                config.Filters.Add(new AuthorizeFilter(policy));        
             });
             services.AddNotyf(config =>
             {
@@ -94,7 +87,9 @@ namespace OnlineExamProject.UI
                 config.HasRippleEffect = true;
                 config.IsDismissable = true;
             });
-          
+            
+         
+
             #region log
             /* ColumnOptions columnOpt = new ColumnOptions();
 

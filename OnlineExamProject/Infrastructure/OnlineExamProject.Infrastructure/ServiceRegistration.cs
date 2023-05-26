@@ -17,10 +17,12 @@ namespace OnlineExamProject.Infrastructure
 		public static void AddInfrastructureServices( this IServiceCollection services)
 		{
 			services.AddScoped<IApplicationService, ApplicationService>();
-		
-			
-			
+            services.AddStackExchangeRedisCache(options =>
+            {
+                options.Configuration = "localhost:6379";
+            });
 
-		}
+
+        }
 	}
 }

@@ -3388,42 +3388,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Batuhan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Batuhan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Batuhan\\source\\repos\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\OnlineExamProject.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Batuhan\\source\\repos\\OnlineSchoolManagment\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\OnlineExamProject.Infrastructure.csproj",
       "projectName": "OnlineExamProject.Infrastructure",
-      "projectPath": "C:\\Users\\Batuhan\\source\\repos\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\OnlineExamProject.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Batuhan\\source\\repos\\OnlineSchoolManagment\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\OnlineExamProject.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Batuhan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Batuhan\\source\\repos\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Batuhan\\source\\repos\\OnlineSchoolManagment\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Batuhan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\DevExpress 18.1\\Components\\System\\Components\\Packages": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Batuhan\\source\\repos\\OnlineExamProject\\Core\\OnlineExamProject.Application\\OnlineExamProject.Application.csproj": {
-              "projectPath": "C:\\Users\\Batuhan\\source\\repos\\OnlineExamProject\\Core\\OnlineExamProject.Application\\OnlineExamProject.Application.csproj"
+            "C:\\Users\\Batuhan\\source\\repos\\OnlineSchoolManagment\\OnlineExamProject\\Core\\OnlineExamProject.Application\\OnlineExamProject.Application.csproj": {
+              "projectPath": "C:\\Users\\Batuhan\\source\\repos\\OnlineSchoolManagment\\OnlineExamProject\\Core\\OnlineExamProject.Application\\OnlineExamProject.Application.csproj"
             }
           }
         }
@@ -3471,7 +3463,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

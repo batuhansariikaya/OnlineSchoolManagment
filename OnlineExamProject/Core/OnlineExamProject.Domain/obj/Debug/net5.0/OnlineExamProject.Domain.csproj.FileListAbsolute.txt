@@ -10,3 +10,15 @@ C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Domain\ob
 C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\refint\OnlineExamProject.Domain.dll
 C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.pdb
 C:\Users\Batuhan\source\repos\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\ref\OnlineExamProject.Domain.dll
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\bin\Debug\net5.0\OnlineExamProject.Domain.deps.json
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\bin\Debug\net5.0\OnlineExamProject.Domain.dll
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\bin\Debug\net5.0\OnlineExamProject.Domain.pdb
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.csproj.AssemblyReference.cache
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.AssemblyInfoInputs.cache
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.AssemblyInfo.cs
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.dll
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\refint\OnlineExamProject.Domain.dll
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\OnlineExamProject.Domain.pdb
+C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Core\OnlineExamProject.Domain\obj\Debug\net5.0\ref\OnlineExamProject.Domain.dll

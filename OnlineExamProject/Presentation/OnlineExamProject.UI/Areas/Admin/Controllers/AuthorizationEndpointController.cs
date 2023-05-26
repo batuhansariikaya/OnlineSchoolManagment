@@ -17,7 +17,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 {
 	[Area("Admin")]
 	//[Authorize(Roles = "Admin")]
-
+	[AllowAnonymous]
 	public class AuthorizationEndpointController : Controller
 	{
 		readonly RoleManager<AppRole> _roleManager;
@@ -52,7 +52,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 			
 		}
 		[HttpPost]
-        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.AuthorizationEndpoint, Definition = "Assign Role To Endpoint", ActionType = ActionType.Add)]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.AuthorizationEndpoint, Definition = "Assign Role To Endpoint Post", ActionType = ActionType.Add)]
         public async Task<IActionResult> AssignRoletoEndpoint(string roles,string menu,string code)
 		{			
 			await _authorizationEndpointService.AssignRoleEndipointAsync(roles,menu,code, typeof(Program));

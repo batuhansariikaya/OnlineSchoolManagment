@@ -1,0 +1,697 @@
+2023-04-03 16:00:15.130 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-03 16:00:15.237 +03:00 [INF] Creating key {6e2d44a4-d163-4dfe-966b-9654fd6d56cd} with creation date 2023-04-03 13:00:15Z, activation date 2023-04-03 13:00:15Z, and expiration date 2023-07-02 13:00:15Z.
+2023-04-03 16:00:15.265 +03:00 [INF] Writing data to file 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys\key-6e2d44a4-d163-4dfe-966b-9654fd6d56cd.xml'.
+2023-04-03 16:00:16.135 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-03 16:00:16.136 +03:00 [INF] Hosting environment: Development
+2023-04-03 16:00:16.136 +03:00 [INF] Content root path: C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-04-03 16:00:16.237 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/ - -
+2023-04-03 16:00:16.521 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 16:00:16.897 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-04-03 16:00:16.938 +03:00 [INF] Executing ViewResult, running view Login.
+2023-04-03 16:00:17.185 +03:00 [INF] Executed ViewResult - view Login executed in 263.9562ms.
+2023-04-03 16:00:17.191 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 292.442ms
+2023-04-03 16:00:17.193 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 16:00:17.197 +03:00 [INF] HTTP GET / responded 200 in 781.2866 ms
+2023-04-03 16:00:17.225 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/ - - - 200 - text/html;+charset=utf-8 1009.1805ms
+2023-04-03 16:00:17.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/core.css - -
+2023-04-03 16:00:17.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons.css - -
+2023-04-03 16:00:17.316 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/theme-default.css - -
+2023-04-03 16:00:17.338 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/fonts/boxicons.css'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\fonts\boxicons.css'
+2023-04-03 16:00:17.338 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/css/theme-default.css'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\css\theme-default.css'
+2023-04-03 16:00:17.340 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/css/core.css'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\css\core.css'
+2023-04-03 16:00:17.341 +03:00 [INF] HTTP GET /sneat/assets/vendor/css/theme-default.css responded 200 in 10.9784 ms
+2023-04-03 16:00:17.341 +03:00 [INF] HTTP GET /sneat/assets/vendor/fonts/boxicons.css responded 200 in 107.3670 ms
+2023-04-03 16:00:17.341 +03:00 [INF] HTTP GET /sneat/assets/vendor/css/core.css responded 200 in 107.3487 ms
+2023-04-03 16:00:17.346 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/theme-default.css - - - 200 71446 text/css 29.7309ms
+2023-04-03 16:00:17.346 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons.css - - - 200 86510 text/css 114.8330ms
+2023-04-03 16:00:17.352 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/css/demo.css - -
+2023-04-03 16:00:17.355 +03:00 [INF] Sending file. Request path: '/sneat/assets/css/demo.css'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\css\demo.css'
+2023-04-03 16:00:17.356 +03:00 [INF] HTTP GET /sneat/assets/css/demo.css responded 200 in 2.2512 ms
+2023-04-03 16:00:17.357 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/css/demo.css - - - 200 2650 text/css 5.2529ms
+2023-04-03 16:00:17.360 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css - -
+2023-04-03 16:00:17.363 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\libs\perfect-scrollbar\perfect-scrollbar.css'
+2023-04-03 16:00:17.363 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css responded 200 in 2.1125 ms
+2023-04-03 16:00:17.364 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css - - - 200 5219 text/css 3.3989ms
+2023-04-03 16:00:17.365 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/pages/page-auth.css - -
+2023-04-03 16:00:17.371 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/css/pages/page-auth.css'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\css\pages\page-auth.css'
+2023-04-03 16:00:17.371 +03:00 [INF] HTTP GET /sneat/assets/vendor/css/pages/page-auth.css responded 200 in 5.1733 ms
+2023-04-03 16:00:17.371 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/helpers.js - -
+2023-04-03 16:00:17.374 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/pages/page-auth.css - - - 200 36208 text/css 8.2789ms
+2023-04-03 16:00:17.378 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/js/config.js - -
+2023-04-03 16:00:17.378 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/js/helpers.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\js\helpers.js'
+2023-04-03 16:00:17.378 +03:00 [INF] HTTP GET /sneat/assets/vendor/js/helpers.js responded 200 in 6.7329 ms
+2023-04-03 16:00:17.380 +03:00 [INF] Sending file. Request path: '/sneat/assets/js/config.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\js\config.js'
+2023-04-03 16:00:17.380 +03:00 [INF] HTTP GET /sneat/assets/js/config.js responded 200 in 1.6964 ms
+2023-04-03 16:00:17.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/js/config.js - - - 200 741 application/javascript 3.4347ms
+2023-04-03 16:00:17.381 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/core.css - - - 200 998344 text/css 150.1963ms
+2023-04-03 16:00:17.384 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/helpers.js - - - 200 103179 application/javascript 12.8235ms
+2023-04-03 16:00:17.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/jquery/jquery.js - -
+2023-04-03 16:00:17.406 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/libs/jquery/jquery.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\libs\jquery\jquery.js'
+2023-04-03 16:00:17.406 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/jquery/jquery.js responded 200 in 13.3048 ms
+2023-04-03 16:00:17.426 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/popper/popper.js - -
+2023-04-03 16:00:17.432 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/libs/popper/popper.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\libs\popper\popper.js'
+2023-04-03 16:00:17.432 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/popper/popper.js responded 200 in 5.3027 ms
+2023-04-03 16:00:17.435 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/popper/popper.js - - - 200 57859 application/javascript 9.0243ms
+2023-04-03 16:00:17.442 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/jquery/jquery.js - - - 200 833085 application/javascript 49.7255ms
+2023-04-03 16:00:17.453 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/bootstrap.js - -
+2023-04-03 16:00:17.459 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js - -
+2023-04-03 16:00:17.464 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\libs\perfect-scrollbar\perfect-scrollbar.js'
+2023-04-03 16:00:17.464 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js responded 200 in 5.2933 ms
+2023-04-03 16:00:17.465 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/menu.js - -
+2023-04-03 16:00:17.466 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/js/bootstrap.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\js\bootstrap.js'
+2023-04-03 16:00:17.467 +03:00 [INF] HTTP GET /sneat/assets/vendor/js/bootstrap.js responded 200 in 13.3479 ms
+2023-04-03 16:00:17.477 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js - - - 200 108858 application/javascript 17.9193ms
+2023-04-03 16:00:17.483 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/js/menu.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\js\menu.js'
+2023-04-03 16:00:17.483 +03:00 [INF] HTTP GET /sneat/assets/vendor/js/menu.js responded 200 in 17.5875 ms
+2023-04-03 16:00:17.487 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/menu.js - - - 200 80283 application/javascript 21.3433ms
+2023-04-03 16:00:17.504 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/bootstrap.js - - - 200 843148 application/javascript 50.7794ms
+2023-04-03 16:00:17.525 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 16:00:17.525 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/js/main.js - -
+2023-04-03 16:00:17.527 +03:00 [INF] Sending file. Request path: '/sneat/assets/js/main.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\js\main.js'
+2023-04-03 16:00:17.527 +03:00 [INF] HTTP GET /sneat/assets/js/main.js responded 200 in 1.8585 ms
+2023-04-03 16:00:17.528 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/js/main.js - - - 200 3964 application/javascript 3.2360ms
+2023-04-03 16:00:17.535 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 6.9265ms
+2023-04-03 16:00:17.666 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons/boxicons.woff2 - -
+2023-04-03 16:00:17.670 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/fonts/boxicons/boxicons.woff2'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\fonts\boxicons\boxicons.woff2'
+2023-04-03 16:00:17.670 +03:00 [INF] HTTP GET /sneat/assets/vendor/fonts/boxicons/boxicons.woff2 responded 200 in 4.3749 ms
+2023-04-03 16:00:17.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons/boxicons.woff2 - - - 200 102988 font/woff2 5.8094ms
+2023-04-03 16:00:17.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/favicon/favicon.ico - -
+2023-04-03 16:00:17.975 +03:00 [INF] Sending file. Request path: '/sneat/assets/img/favicon/favicon.ico'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\img\favicon\favicon.ico'
+2023-04-03 16:00:17.976 +03:00 [INF] HTTP GET /sneat/assets/img/favicon/favicon.ico responded 200 in 2.4447 ms
+2023-04-03 16:00:17.977 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/favicon/favicon.ico - - - 200 1393 image/x-icon 5.2714ms
+2023-04-03 16:00:47.883 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/ application/x-www-form-urlencoded 208
+2023-04-03 16:00:47.886 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 16:00:47.922 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineExamProject.Application.ViewModels.User.VM_Login, System.String) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-04-03 16:00:48.314 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 391.4024ms
+2023-04-03 16:00:48.315 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 16:00:48.317 +03:00 [ERR] HTTP POST / responded 500 in 432.6144 ms
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at OnlineExamProject.UI.Controllers.AuthController.Login(VM_Login loginModel, String returnUrl) in C:\Users\Batuhan\source\repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+2023-04-03 16:00:48.448 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at OnlineExamProject.UI.Controllers.AuthController.Login(VM_Login loginModel, String returnUrl) in C:\Users\Batuhan\source\repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\Controllers\AuthController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at AspNetCoreHero.ToastNotification.Middlewares.NotyfMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-03 16:00:48.825 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/ application/x-www-form-urlencoded 208 - 500 - text/html;+charset=utf-8 941.4119ms
+2023-04-03 16:00:48.847 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 16:00:48.847 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2023-04-03 16:00:48.848 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 1.4381ms
+2023-04-03 16:00:49.188 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 341.0056ms
+2023-04-03 16:00:49.346 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/favicon.ico - -
+2023-04-03 16:00:49.365 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\favicon.ico'
+2023-04-03 16:00:49.365 +03:00 [INF] HTTP GET /favicon.ico responded 200 in 18.6702 ms
+2023-04-03 16:00:49.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/favicon.ico - - - 200 5430 image/x-icon 66.7296ms
+2023-04-03 17:27:30.929 +03:00 [INF] User profile is available. Using 'C:\Users\Batuhan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-04-03 17:27:31.433 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-04-03 17:27:31.433 +03:00 [INF] Hosting environment: Development
+2023-04-03 17:27:31.433 +03:00 [INF] Content root path: C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI
+2023-04-03 17:27:31.471 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login - -
+2023-04-03 17:27:31.615 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 17:27:32.100 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-04-03 17:27:32.143 +03:00 [INF] Executing ViewResult, running view Login.
+2023-04-03 17:27:32.383 +03:00 [INF] Executed ViewResult - view Login executed in 258.2547ms.
+2023-04-03 17:27:32.398 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 295.7215ms
+2023-04-03 17:27:32.416 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 17:27:32.420 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 887.4552 ms
+2023-04-03 17:27:32.470 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login - - - 200 - text/html;+charset=utf-8 1003.5625ms
+2023-04-03 17:27:32.506 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/core.css - -
+2023-04-03 17:27:32.511 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons.css - -
+2023-04-03 17:27:32.519 +03:00 [INF] The file /sneat/assets/vendor/css/core.css was not modified
+2023-04-03 17:27:32.519 +03:00 [INF] The file /sneat/assets/vendor/fonts/boxicons.css was not modified
+2023-04-03 17:27:32.522 +03:00 [INF] HTTP GET /sneat/assets/vendor/css/core.css responded 304 in 13.4807 ms
+2023-04-03 17:27:32.522 +03:00 [INF] HTTP GET /sneat/assets/vendor/fonts/boxicons.css responded 304 in 5.3687 ms
+2023-04-03 17:27:32.525 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/core.css - - - 304 - text/css 18.3800ms
+2023-04-03 17:27:32.526 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons.css - - - 304 - text/css 13.6112ms
+2023-04-03 17:27:32.535 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/theme-default.css - -
+2023-04-03 17:27:32.537 +03:00 [INF] The file /sneat/assets/vendor/css/theme-default.css was not modified
+2023-04-03 17:27:32.539 +03:00 [INF] HTTP GET /sneat/assets/vendor/css/theme-default.css responded 304 in 2.6955 ms
+2023-04-03 17:27:32.539 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/css/demo.css - -
+2023-04-03 17:27:32.540 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/theme-default.css - - - 304 - text/css 4.9083ms
+2023-04-03 17:27:32.542 +03:00 [INF] The file /sneat/assets/css/demo.css was not modified
+2023-04-03 17:27:32.542 +03:00 [INF] HTTP GET /sneat/assets/css/demo.css responded 304 in 2.8537 ms
+2023-04-03 17:27:32.543 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/css/demo.css - - - 304 - text/css 4.1025ms
+2023-04-03 17:27:32.546 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css - -
+2023-04-03 17:27:32.548 +03:00 [INF] The file /sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css was not modified
+2023-04-03 17:27:32.548 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css responded 304 in 1.2450 ms
+2023-04-03 17:27:32.551 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css - - - 304 - text/css 2.9320ms
+2023-04-03 17:27:32.558 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/pages/page-auth.css - -
+2023-04-03 17:27:32.562 +03:00 [INF] The file /sneat/assets/vendor/css/pages/page-auth.css was not modified
+2023-04-03 17:27:32.562 +03:00 [INF] HTTP GET /sneat/assets/vendor/css/pages/page-auth.css responded 304 in 2.7125 ms
+2023-04-03 17:27:32.563 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/css/pages/page-auth.css - - - 304 - text/css 5.2065ms
+2023-04-03 17:27:32.565 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/js/config.js - -
+2023-04-03 17:27:32.567 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/helpers.js - -
+2023-04-03 17:27:32.568 +03:00 [INF] The file /sneat/assets/js/config.js was not modified
+2023-04-03 17:27:32.568 +03:00 [INF] HTTP GET /sneat/assets/js/config.js responded 304 in 1.6984 ms
+2023-04-03 17:27:32.570 +03:00 [INF] The file /sneat/assets/vendor/js/helpers.js was not modified
+2023-04-03 17:27:32.570 +03:00 [INF] HTTP GET /sneat/assets/vendor/js/helpers.js responded 304 in 2.6166 ms
+2023-04-03 17:27:32.572 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/helpers.js - - - 304 - application/javascript 4.1841ms
+2023-04-03 17:27:32.573 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/jquery/jquery.js - -
+2023-04-03 17:27:32.575 +03:00 [INF] The file /sneat/assets/vendor/libs/jquery/jquery.js was not modified
+2023-04-03 17:27:32.575 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/jquery/jquery.js responded 304 in 1.5644 ms
+2023-04-03 17:27:32.576 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/jquery/jquery.js - - - 304 - application/javascript 2.7232ms
+2023-04-03 17:27:32.578 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/popper/popper.js - -
+2023-04-03 17:27:32.580 +03:00 [INF] The file /sneat/assets/vendor/libs/popper/popper.js was not modified
+2023-04-03 17:27:32.580 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/popper/popper.js responded 304 in 1.3156 ms
+2023-04-03 17:27:32.581 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/popper/popper.js - - - 304 - application/javascript 2.8516ms
+2023-04-03 17:27:32.583 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/bootstrap.js - -
+2023-04-03 17:27:32.584 +03:00 [INF] The file /sneat/assets/vendor/js/bootstrap.js was not modified
+2023-04-03 17:27:32.584 +03:00 [INF] HTTP GET /sneat/assets/vendor/js/bootstrap.js responded 304 in 1.3333 ms
+2023-04-03 17:27:32.585 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/bootstrap.js - - - 304 - application/javascript 2.7100ms
+2023-04-03 17:27:32.590 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/js/config.js - - - 304 - application/javascript 22.6773ms
+2023-04-03 17:27:32.595 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js - -
+2023-04-03 17:27:32.596 +03:00 [INF] The file /sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js was not modified
+2023-04-03 17:27:32.597 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js responded 304 in 2.0233 ms
+2023-04-03 17:27:32.600 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js - - - 304 - application/javascript 4.7737ms
+2023-04-03 17:27:32.604 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/menu.js - -
+2023-04-03 17:27:32.605 +03:00 [INF] The file /sneat/assets/vendor/js/menu.js was not modified
+2023-04-03 17:27:32.605 +03:00 [INF] HTTP GET /sneat/assets/vendor/js/menu.js responded 304 in 0.9240 ms
+2023-04-03 17:27:32.606 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/js/menu.js - - - 304 - application/javascript 2.2395ms
+2023-04-03 17:27:32.639 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/js/main.js - -
+2023-04-03 17:27:32.643 +03:00 [INF] The file /sneat/assets/js/main.js was not modified
+2023-04-03 17:27:32.643 +03:00 [INF] HTTP GET /sneat/assets/js/main.js responded 304 in 3.9106 ms
+2023-04-03 17:27:32.646 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/js/main.js - - - 304 - application/javascript 12.3658ms
+2023-04-03 17:27:32.651 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:27:32.669 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 12.7424ms
+2023-04-03 17:27:32.804 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons/boxicons.woff2 - -
+2023-04-03 17:27:32.806 +03:00 [INF] The file /sneat/assets/vendor/fonts/boxicons/boxicons.woff2 was not modified
+2023-04-03 17:27:32.806 +03:00 [INF] HTTP GET /sneat/assets/vendor/fonts/boxicons/boxicons.woff2 responded 304 in 1.8997 ms
+2023-04-03 17:27:32.808 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/fonts/boxicons/boxicons.woff2 - - - 304 - font/woff2 3.3526ms
+2023-04-03 17:27:33.409 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/favicon/favicon.ico - -
+2023-04-03 17:27:33.412 +03:00 [INF] The file /sneat/assets/img/favicon/favicon.ico was not modified
+2023-04-03 17:27:33.412 +03:00 [INF] HTTP GET /sneat/assets/img/favicon/favicon.ico responded 304 in 2.2224 ms
+2023-04-03 17:27:33.414 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/favicon/favicon.ico - - - 304 - image/x-icon 5.2996ms
+2023-04-03 17:27:57.756 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/SignUp/ - -
+2023-04-03 17:27:57.767 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.SignUp (OnlineExamProject.UI)'
+2023-04-03 17:27:57.771 +03:00 [INF] Route matched with {action = "SignUp", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult SignUp() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-04-03 17:27:57.773 +03:00 [INF] Executing ViewResult, running view SignUp.
+2023-04-03 17:27:57.971 +03:00 [INF] Executed ViewResult - view SignUp executed in 198.3537ms.
+2023-04-03 17:27:57.977 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.SignUp (OnlineExamProject.UI) in 205.7432ms
+2023-04-03 17:27:57.978 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.SignUp (OnlineExamProject.UI)'
+2023-04-03 17:27:57.980 +03:00 [INF] HTTP GET /Auth/SignUp/ responded 200 in 221.3999 ms
+2023-04-03 17:27:58.101 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/SignUp/ - - - 200 - text/html;+charset=utf-8 344.8995ms
+2023-04-03 17:27:58.120 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_vs/browserLink - -
+2023-04-03 17:27:58.120 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:27:58.130 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 8.7269ms
+2023-04-03 17:27:58.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 117.5633ms
+2023-04-03 17:28:31.435 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/Auth/SignUp/ application/x-www-form-urlencoded 100
+2023-04-03 17:28:31.441 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.SignUp (OnlineExamProject.UI)'
+2023-04-03 17:28:31.506 +03:00 [INF] Route matched with {action = "SignUp", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignUp(OnlineExamProject.Application.ViewModels.User.VM_UserAdd) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-04-03 17:28:32.866 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:28:33.520 +03:00 [INF] Executed DbCommand (83ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:28:33.582 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:28:34.140 +03:00 [INF] Executed DbCommand (18ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 4000), @p8='?' (Size = 256), @p9='?' (Size = 256), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 4000), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [IsActive], [LockoutEnabled], [LockoutEnd], [Name], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [Surname], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);
+SELECT [Id]
+FROM [AspNetUsers]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2023-04-03 17:28:34.332 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Home/Index.
+2023-04-03 17:28:34.333 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.SignUp (OnlineExamProject.UI) in 2826.4682ms
+2023-04-03 17:28:34.333 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.SignUp (OnlineExamProject.UI)'
+2023-04-03 17:28:34.334 +03:00 [INF] HTTP POST /Auth/SignUp/ responded 302 in 2896.3345 ms
+2023-04-03 17:28:34.339 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/Auth/SignUp/ application/x-www-form-urlencoded 100 - 302 - - 2903.7589ms
+2023-04-03 17:28:34.341 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2023-04-03 17:28:34.343 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-04-03 17:28:34.351 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2023-04-03 17:28:34.357 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-04-03 17:28:34.358 +03:00 [INF] Authorization failed for the request at filter 'Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter'.
+2023-04-03 17:28:34.364 +03:00 [INF] Executing ChallengeResult with authentication schemes ([]).
+2023-04-03 17:28:34.391 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-04-03 17:28:34.391 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 39.9874ms
+2023-04-03 17:28:34.392 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-04-03 17:28:34.392 +03:00 [INF] HTTP GET /Admin/Home/Index responded 302 in 48.8720 ms
+2023-04-03 17:28:34.393 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 302 - - 51.1576ms
+2023-04-03 17:28:34.399 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex - -
+2023-04-03 17:28:34.400 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 17:28:34.401 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-04-03 17:28:34.402 +03:00 [INF] Executing ViewResult, running view Login.
+2023-04-03 17:28:34.407 +03:00 [INF] Executed ViewResult - view Login executed in 4.916ms.
+2023-04-03 17:28:34.407 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 5.406ms
+2023-04-03 17:28:34.407 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 17:28:34.407 +03:00 [INF] HTTP GET /Auth/Login responded 200 in 6.8524 ms
+2023-04-03 17:28:34.417 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex - - - 200 - text/html;+charset=utf-8 15.3874ms
+2023-04-03 17:28:34.454 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:28:34.457 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 2.8711ms
+2023-04-03 17:28:49.666 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex application/x-www-form-urlencoded 232
+2023-04-03 17:28:49.669 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 17:28:49.682 +03:00 [INF] Route matched with {action = "Login", controller = "Auth", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(OnlineExamProject.Application.ViewModels.User.VM_Login, System.String) on controller OnlineExamProject.UI.Controllers.AuthController (OnlineExamProject.UI).
+2023-04-03 17:28:49.745 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:28:49.778 +03:00 [INF] Executed DbCommand (26ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:28:49.794 +03:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2023-04-03 17:28:49.796 +03:00 [INF] AuthenticationScheme: Identity.External signed out.
+2023-04-03 17:28:49.796 +03:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2023-04-03 17:28:49.940 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__user_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-04-03 17:28:49.999 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:28:50.013 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-04-03 17:28:50.018 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:28:50.019 +03:00 [INF] Executing RedirectResult, redirecting to /Admin/Home/Index.
+2023-04-03 17:28:50.019 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI) in 336.6458ms
+2023-04-03 17:28:50.019 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.AuthController.Login (OnlineExamProject.UI)'
+2023-04-03 17:28:50.019 +03:00 [INF] HTTP POST /Auth/Login responded 302 in 350.5225 ms
+2023-04-03 17:28:50.020 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44398/Auth/Login?ReturnUrl=%2FAdmin%2FHome%2FIndex application/x-www-form-urlencoded 232 - 302 - - 354.0104ms
+2023-04-03 17:28:50.024 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Home/Index - -
+2023-04-03 17:28:50.034 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-04-03 17:28:50.034 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.HomeController (OnlineExamProject.UI).
+2023-04-03 17:28:50.041 +03:00 [INF] Authorization was successful.
+2023-04-03 17:28:50.115 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:28:50.158 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Questions] AS [q]
+2023-04-03 17:28:50.216 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Exams] AS [e]
+2023-04-03 17:28:50.229 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+2023-04-03 17:28:50.241 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:28:50.248 +03:00 [INF] Executing ViewResult, running view Index.
+2023-04-03 17:28:50.329 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__today_0='?' (DbType = DateTime2), @__last24_1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Teachers] AS [t]
+WHERE ([t].[CreatedDate] <= @__today_0) AND ([t].[CreatedDate] >= @__last24_1)
+2023-04-03 17:28:50.651 +03:00 [INF] Executed ViewResult - view Index executed in 403.4814ms.
+2023-04-03 17:28:50.651 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI) in 616.9916ms
+2023-04-03 17:28:50.652 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.HomeController.Index (OnlineExamProject.UI)'
+2023-04-03 17:28:50.652 +03:00 [INF] HTTP GET /Admin/Home/Index responded 200 in 626.3689 ms
+2023-04-03 17:28:50.657 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Home/Index - - - 200 - text/html;+charset=utf-8 632.4370ms
+2023-04-03 17:28:50.677 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/avatars/1.png - -
+2023-04-03 17:28:50.678 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:28:50.680 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.4454 ms
+2023-04-03 17:28:50.683 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 4.2169ms
+2023-04-03 17:28:50.703 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_content/AspNetCoreHero.ToastNotification/notyf.min.css - -
+2023-04-03 17:28:50.705 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/js/dashboards-analytics.js - -
+2023-04-03 17:28:50.706 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/apex-charts/apexcharts.js - -
+2023-04-03 17:28:50.706 +03:00 [INF] Sending file. Request path: '/sneat/assets/img/avatars/1.png'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\img\avatars\1.png'
+2023-04-03 17:28:50.706 +03:00 [INF] HTTP GET /sneat/assets/img/avatars/1.png responded 200 in 28.9475 ms
+2023-04-03 17:28:50.707 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/illustrations/man-with-laptop-light.png - -
+2023-04-03 17:28:50.708 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/paypal.png - -
+2023-04-03 17:28:50.709 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/wallet-info.png - -
+2023-04-03 17:28:50.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/chart-success.png - -
+2023-04-03 17:28:50.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_content/AspNetCoreHero.ToastNotification/notyf.min.js - -
+2023-04-03 17:28:50.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - -
+2023-04-03 17:28:50.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:28:50.710 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/avatars/1.png - - - 200 14015 image/png 33.2235ms
+2023-04-03 17:28:50.711 +03:00 [INF] Sending file. Request path: '/sneat/assets/img/illustrations/man-with-laptop-light.png'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\img\illustrations\man-with-laptop-light.png'
+2023-04-03 17:28:50.711 +03:00 [INF] HTTP GET /sneat/assets/img/illustrations/man-with-laptop-light.png responded 200 in 4.5763 ms
+2023-04-03 17:28:50.712 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/illustrations/man-with-laptop-light.png - - - 200 8826 image/png 5.7604ms
+2023-04-03 17:28:50.713 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 2.3392ms
+2023-04-03 17:28:50.714 +03:00 [INF] Sending file. Request path: '/sneat/assets/img/icons/unicons/paypal.png'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\img\icons\unicons\paypal.png'
+2023-04-03 17:28:50.714 +03:00 [INF] HTTP GET /sneat/assets/img/icons/unicons/paypal.png responded 200 in 5.7730 ms
+2023-04-03 17:28:50.715 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/paypal.png - - - 200 1090 image/png 7.2547ms
+2023-04-03 17:28:50.717 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - -
+2023-04-03 17:28:50.718 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - -
+2023-04-03 17:28:50.721 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - -
+2023-04-03 17:28:50.722 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/cc-primary.png - -
+2023-04-03 17:28:50.724 +03:00 [INF] Sending file. Request path: '/sneat/assets/img/icons/unicons/chart-success.png'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\img\icons\unicons\chart-success.png'
+2023-04-03 17:28:50.725 +03:00 [INF] HTTP GET /sneat/assets/img/icons/unicons/chart-success.png responded 200 in 14.8207 ms
+2023-04-03 17:28:50.725 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/paypal.png responded 404 in 3.8870 ms
+2023-04-03 17:28:50.725 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/chart.png responded 404 in 7.7077 ms
+2023-04-03 17:28:50.725 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-success.png responded 404 in 15.1696 ms
+2023-04-03 17:28:50.725 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/paypal.png - - - 404 - - 5.8034ms
+2023-04-03 17:28:50.726 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/chart.png - - - 404 - - 8.2556ms
+2023-04-03 17:28:50.726 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-success.png - - - 404 - - 15.8808ms
+2023-04-03 17:28:50.726 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/wallet.png responded 404 in 8.0146 ms
+2023-04-03 17:28:50.726 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/chart-success.png - - - 200 1528 image/png 15.5026ms
+2023-04-03 17:28:50.726 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/wallet.png - - - 404 - - 8.4963ms
+2023-04-03 17:28:50.727 +03:00 [INF] Sending file. Request path: '/sneat/assets/img/icons/unicons/wallet-info.png'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\img\icons\unicons\wallet-info.png'
+2023-04-03 17:28:50.727 +03:00 [INF] HTTP GET /sneat/assets/img/icons/unicons/wallet-info.png responded 200 in 17.1800 ms
+2023-04-03 17:28:50.727 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/wallet-info.png - - - 200 936 image/png 17.3978ms
+2023-04-03 17:28:50.727 +03:00 [INF] Sending file. Request path: '/sneat/assets/js/dashboards-analytics.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\js\dashboards-analytics.js'
+2023-04-03 17:28:50.727 +03:00 [INF] HTTP GET /sneat/assets/js/dashboards-analytics.js responded 200 in 22.1699 ms
+2023-04-03 17:28:50.732 +03:00 [INF] Sending file. Request path: '/_content/AspNetCoreHero.ToastNotification/notyf.min.css'. Physical path: 'C:\Users\Batuhan\.nuget\packages\aspnetcorehero.toastnotification\1.1.0\staticwebassets\notyf.min.css'
+2023-04-03 17:28:50.733 +03:00 [INF] HTTP GET /_content/AspNetCoreHero.ToastNotification/notyf.min.css responded 200 in 29.0087 ms
+2023-04-03 17:28:50.733 +03:00 [INF] Sending file. Request path: '/sneat/assets/img/icons/unicons/cc-primary.png'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\img\icons\unicons\cc-primary.png'
+2023-04-03 17:28:50.733 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_content/AspNetCoreHero.ToastNotification/notyf.min.css - - - 200 7591 text/css 30.0447ms
+2023-04-03 17:28:50.733 +03:00 [INF] HTTP GET /sneat/assets/img/icons/unicons/cc-primary.png responded 200 in 11.1609 ms
+2023-04-03 17:28:50.734 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/img/icons/unicons/cc-primary.png - - - 200 702 image/png 11.6938ms
+2023-04-03 17:28:50.736 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/js/dashboards-analytics.js - - - 200 15694 application/javascript 31.1622ms
+2023-04-03 17:28:50.743 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - -
+2023-04-03 17:28:50.745 +03:00 [INF] HTTP GET /Admin/assets/img/icons/unicons/cc-warning.png responded 404 in 1.3769 ms
+2023-04-03 17:28:50.749 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/assets/img/icons/unicons/cc-warning.png - - - 404 - - 5.7026ms
+2023-04-03 17:28:50.752 +03:00 [INF] Sending file. Request path: '/_content/AspNetCoreHero.ToastNotification/notyf.min.js'. Physical path: 'C:\Users\Batuhan\.nuget\packages\aspnetcorehero.toastnotification\1.1.0\staticwebassets\notyf.min.js'
+2023-04-03 17:28:50.752 +03:00 [INF] HTTP GET /_content/AspNetCoreHero.ToastNotification/notyf.min.js responded 200 in 42.3395 ms
+2023-04-03 17:28:50.753 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_content/AspNetCoreHero.ToastNotification/notyf.min.js - - - 200 10594 application/javascript 43.3744ms
+2023-04-03 17:28:50.772 +03:00 [INF] Sending file. Request path: '/sneat/assets/vendor/libs/apex-charts/apexcharts.js'. Physical path: 'C:\Users\Batuhan\Source\Repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\wwwroot\sneat\assets\vendor\libs\apex-charts\apexcharts.js'
+2023-04-03 17:28:50.772 +03:00 [INF] HTTP GET /sneat/assets/vendor/libs/apex-charts/apexcharts.js responded 200 in 65.5398 ms
+2023-04-03 17:28:50.841 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/assets/vendor/libs/apex-charts/apexcharts.js - - - 200 1251293 application/javascript 134.3548ms
+2023-04-03 17:28:58.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Account/Users - -
+2023-04-03 17:28:58.224 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI)'
+2023-04-03 17:28:58.227 +03:00 [INF] Route matched with {area = "Admin", action = "Users", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Users() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AccountController (OnlineExamProject.UI).
+2023-04-03 17:28:58.228 +03:00 [INF] Authorization was successful.
+2023-04-03 17:28:58.427 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:28:58.446 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:28:58.453 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:28:58.462 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:28:58.472 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:28:58.472 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI) in 244.9767ms
+2023-04-03 17:28:58.473 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI)'
+2023-04-03 17:28:58.473 +03:00 [INF] HTTP GET /Admin/Account/Users responded 302 in 249.2511 ms
+2023-04-03 17:28:58.473 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Account/Users - - - 302 - - 251.5591ms
+2023-04-03 17:28:58.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:28:58.481 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:28:58.482 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:28:58.484 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:28:58.490 +03:00 [INF] Executed ViewResult - view Error401 executed in 6.196ms.
+2023-04-03 17:28:58.490 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 7.5945ms
+2023-04-03 17:28:58.490 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:28:58.490 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 9.3677 ms
+2023-04-03 17:28:58.492 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 11.9601ms
+2023-04-03 17:28:58.710 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:28:58.714 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:28:58.716 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.0027 ms
+2023-04-03 17:28:58.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 6.1592ms
+2023-04-03 17:28:58.716 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 1.9928ms
+2023-04-03 17:29:04.301 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Account/Users - -
+2023-04-03 17:29:04.306 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI)'
+2023-04-03 17:29:04.306 +03:00 [INF] Route matched with {area = "Admin", action = "Users", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Users() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AccountController (OnlineExamProject.UI).
+2023-04-03 17:29:04.307 +03:00 [INF] Authorization was successful.
+2023-04-03 17:29:04.308 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:29:04.319 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:29:04.325 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:29:04.332 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:29:04.333 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:29:04.333 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI) in 26.9698ms
+2023-04-03 17:29:04.334 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AccountController.Users (OnlineExamProject.UI)'
+2023-04-03 17:29:04.334 +03:00 [INF] HTTP GET /Admin/Account/Users responded 302 in 31.1498 ms
+2023-04-03 17:29:04.336 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Account/Users - - - 302 - - 34.4606ms
+2023-04-03 17:29:04.339 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:29:04.342 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:04.342 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:29:04.344 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:29:04.347 +03:00 [INF] Executed ViewResult - view Error401 executed in 2.8752ms.
+2023-04-03 17:29:04.347 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 3.9129ms
+2023-04-03 17:29:04.347 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:04.347 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 6.2506 ms
+2023-04-03 17:29:04.348 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 8.3221ms
+2023-04-03 17:29:04.364 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:29:04.366 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:29:04.367 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 0.7613 ms
+2023-04-03 17:29:04.368 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 1.8896ms
+2023-04-03 17:29:04.370 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 6.6636ms
+2023-04-03 17:29:04.960 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Role/RoleList - -
+2023-04-03 17:29:04.963 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.RoleController.RoleList (OnlineExamProject.UI)'
+2023-04-03 17:29:04.966 +03:00 [INF] Route matched with {area = "Admin", action = "RoleList", controller = "Role"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RoleList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.RoleController (OnlineExamProject.UI).
+2023-04-03 17:29:04.967 +03:00 [INF] Authorization was successful.
+2023-04-03 17:29:04.968 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:29:04.976 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:29:04.986 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:29:04.996 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:29:04.997 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:29:04.997 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.RoleController.RoleList (OnlineExamProject.UI) in 30.82ms
+2023-04-03 17:29:04.998 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.RoleController.RoleList (OnlineExamProject.UI)'
+2023-04-03 17:29:04.998 +03:00 [INF] HTTP GET /Admin/Role/RoleList responded 302 in 35.7563 ms
+2023-04-03 17:29:04.998 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Role/RoleList - - - 302 - - 38.6110ms
+2023-04-03 17:29:05.004 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:29:05.006 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:05.006 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:29:05.006 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:29:05.009 +03:00 [INF] Executed ViewResult - view Error401 executed in 2.6536ms.
+2023-04-03 17:29:05.009 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 3.1832ms
+2023-04-03 17:29:05.010 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:05.010 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 4.8534 ms
+2023-04-03 17:29:05.012 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 8.7245ms
+2023-04-03 17:29:05.033 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:29:05.034 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:29:05.035 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 0.7964 ms
+2023-04-03 17:29:05.035 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 2.0725ms
+2023-04-03 17:29:05.041 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 7.2027ms
+2023-04-03 17:29:06.030 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - -
+2023-04-03 17:29:06.035 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2023-04-03 17:29:06.043 +03:00 [INF] Route matched with {area = "Admin", action = "EndpointsList", controller = "AuthorizationEndpoint"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] EndpointsList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController (OnlineExamProject.UI).
+2023-04-03 17:29:06.043 +03:00 [INF] Authorization was successful.
+2023-04-03 17:29:06.045 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:29:06.053 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:29:06.062 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:29:06.071 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:29:06.072 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:29:06.074 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI) in 29.9168ms
+2023-04-03 17:29:06.074 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.AuthorizationEndpointController.EndpointsList (OnlineExamProject.UI)'
+2023-04-03 17:29:06.074 +03:00 [INF] HTTP GET /Admin/AuthorizationEndpoint/EndpointsList/ responded 302 in 42.5639 ms
+2023-04-03 17:29:06.076 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/AuthorizationEndpoint/EndpointsList/ - - - 302 - - 46.2224ms
+2023-04-03 17:29:06.080 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:29:06.082 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:06.082 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:29:06.082 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:29:06.086 +03:00 [INF] Executed ViewResult - view Error401 executed in 3.5389ms.
+2023-04-03 17:29:06.086 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 4.037ms
+2023-04-03 17:29:06.086 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:06.086 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 4.9329 ms
+2023-04-03 17:29:06.089 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 8.0776ms
+2023-04-03 17:29:06.108 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:29:06.108 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:29:06.109 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 0.9886 ms
+2023-04-03 17:29:06.109 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 1.4868ms
+2023-04-03 17:29:06.111 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 3.1791ms
+2023-04-03 17:29:07.316 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - -
+2023-04-03 17:29:07.318 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-04-03 17:29:07.321 +03:00 [INF] Route matched with {area = "Admin", action = "GradeList", controller = "Grade"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GradeList() on controller OnlineExamProject.UI.Areas.Admin.Controllers.GradeController (OnlineExamProject.UI).
+2023-04-03 17:29:07.321 +03:00 [INF] Authorization was successful.
+2023-04-03 17:29:07.324 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:29:07.341 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:29:07.352 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:29:07.364 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:29:07.364 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:29:07.365 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI) in 43.5627ms
+2023-04-03 17:29:07.365 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.GradeController.GradeList (OnlineExamProject.UI)'
+2023-04-03 17:29:07.365 +03:00 [INF] HTTP GET /Admin/Grade/GradeList responded 302 in 47.0905 ms
+2023-04-03 17:29:07.365 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Grade/GradeList - - - 302 - - 49.4170ms
+2023-04-03 17:29:07.369 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:29:07.370 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:07.370 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:29:07.371 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:29:07.372 +03:00 [INF] Executed ViewResult - view Error401 executed in 1.8866ms.
+2023-04-03 17:29:07.372 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 2.0561ms
+2023-04-03 17:29:07.373 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:07.373 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 3.0375 ms
+2023-04-03 17:29:07.374 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 4.9671ms
+2023-04-03 17:29:07.392 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:29:07.394 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:29:07.395 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.4179 ms
+2023-04-03 17:29:07.396 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 4.2843ms
+2023-04-03 17:29:07.399 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 5.2221ms
+2023-04-03 17:29:08.229 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Question/Index - -
+2023-04-03 17:29:08.232 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI)'
+2023-04-03 17:29:08.244 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Question"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(OnlineExamProject.Application.Features.Queries.Question.GetAllQuestion.GetAllQuestionQueryRequest) on controller OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController (OnlineExamProject.UI).
+2023-04-03 17:29:08.245 +03:00 [INF] Authorization was successful.
+2023-04-03 17:29:08.249 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:29:08.257 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:29:08.266 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:29:08.276 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:29:08.277 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:29:08.277 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI) in 32.5636ms
+2023-04-03 17:29:08.277 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI)'
+2023-04-03 17:29:08.277 +03:00 [INF] HTTP GET /Admin/Question/Index responded 302 in 46.6277 ms
+2023-04-03 17:29:08.277 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Question/Index - - - 302 - - 48.5949ms
+2023-04-03 17:29:08.281 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:29:08.283 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:08.283 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:29:08.284 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:29:08.285 +03:00 [INF] Executed ViewResult - view Error401 executed in 1.4124ms.
+2023-04-03 17:29:08.286 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 2.0467ms
+2023-04-03 17:29:08.286 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:08.286 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 3.6827 ms
+2023-04-03 17:29:08.287 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 5.8899ms
+2023-04-03 17:29:08.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:29:08.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:29:08.305 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.7597 ms
+2023-04-03 17:29:08.305 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 2.9527ms
+2023-04-03 17:29:08.309 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 6.5635ms
+2023-04-03 17:29:08.948 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Exam/Index/ - -
+2023-04-03 17:29:08.951 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI)'
+2023-04-03 17:29:08.958 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Exam"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller OnlineExamProject.UI.Areas.Admin.Controllers.ExamController (OnlineExamProject.UI).
+2023-04-03 17:29:08.958 +03:00 [INF] Authorization was successful.
+2023-04-03 17:29:08.960 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:29:08.966 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:29:08.970 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:29:08.981 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:29:08.982 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:29:08.982 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI) in 23.8361ms
+2023-04-03 17:29:08.982 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.ExamController.Index (OnlineExamProject.UI)'
+2023-04-03 17:29:08.982 +03:00 [INF] HTTP GET /Admin/Exam/Index/ responded 302 in 32.3170 ms
+2023-04-03 17:29:08.983 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Exam/Index/ - - - 302 - - 35.8379ms
+2023-04-03 17:29:08.986 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:29:08.988 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:08.988 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:29:08.989 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:29:08.991 +03:00 [INF] Executed ViewResult - view Error401 executed in 2.0369ms.
+2023-04-03 17:29:08.991 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 2.5838ms
+2023-04-03 17:29:08.991 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:08.991 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 4.1230 ms
+2023-04-03 17:29:08.994 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 7.2538ms
+2023-04-03 17:29:09.011 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:29:09.012 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:29:09.013 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 1.0214 ms
+2023-04-03 17:29:09.013 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 1.6023ms
+2023-04-03 17:29:09.015 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 3.4882ms
+2023-04-03 17:29:10.363 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Admin/Question/Index - -
+2023-04-03 17:29:10.368 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI)'
+2023-04-03 17:29:10.368 +03:00 [INF] Route matched with {area = "Admin", action = "Index", controller = "Question"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(OnlineExamProject.Application.Features.Queries.Question.GetAllQuestion.GetAllQuestionQueryRequest) on controller OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController (OnlineExamProject.UI).
+2023-04-03 17:29:10.368 +03:00 [INF] Authorization was successful.
+2023-04-03 17:29:10.371 +03:00 [INF] Entity Framework Core 5.0.17 initialized 'OnlineExamProjectDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2023-04-03 17:29:10.381 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-04-03 17:29:10.387 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[IsActive], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-04-03 17:29:10.395 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-04-03 17:29:10.395 +03:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 401
+2023-04-03 17:29:10.396 +03:00 [INF] Executed action OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI) in 27.4991ms
+2023-04-03 17:29:10.396 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Areas.Admin.Controllers.QuestionController.Index (OnlineExamProject.UI)'
+2023-04-03 17:29:10.396 +03:00 [INF] HTTP GET /Admin/Question/Index responded 302 in 32.8834 ms
+2023-04-03 17:29:10.397 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Admin/Question/Index - - - 302 - - 34.3718ms
+2023-04-03 17:29:10.401 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/Error/Error401 - -
+2023-04-03 17:29:10.402 +03:00 [INF] Executing endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:10.403 +03:00 [INF] Route matched with {action = "Error401", controller = "Error", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error401() on controller OnlineExamProject.UI.Controllers.ErrorController (OnlineExamProject.UI).
+2023-04-03 17:29:10.403 +03:00 [INF] Executing ViewResult, running view Error401.
+2023-04-03 17:29:10.405 +03:00 [INF] Executed ViewResult - view Error401 executed in 1.8614ms.
+2023-04-03 17:29:10.405 +03:00 [INF] Executed action OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI) in 2.1654ms
+2023-04-03 17:29:10.405 +03:00 [INF] Executed endpoint 'OnlineExamProject.UI.Controllers.ErrorController.Error401 (OnlineExamProject.UI)'
+2023-04-03 17:29:10.405 +03:00 [INF] HTTP GET /Error/Error401 responded 200 in 3.2285 ms
+2023-04-03 17:29:10.407 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/Error/Error401 - - - 200 - text/html;+charset=utf-8 6.3891ms
+2023-04-03 17:29:10.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - -
+2023-04-03 17:29:10.425 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - -
+2023-04-03 17:29:10.426 +03:00 [INF] HTTP GET /sneat/vendor/fonts/boxicons.css responded 404 in 0.6960 ms
+2023-04-03 17:29:10.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/sneat/vendor/fonts/boxicons.css - - - 404 - - 1.4202ms
+2023-04-03 17:29:10.427 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44398/_framework/aspnetcore-browser-refresh.js - - - 200 12010 application/javascript;+charset=utf-8 2.1078ms

@@ -5,6 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Middlewares\**" />
+    <Content Remove="Middlewares\**" />
+    <EmbeddedResource Remove="Middlewares\**" />
+    <None Remove="Middlewares\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\sneat\.github\workflows\handle-new-issue-comment.yml" />
     <None Include="wwwroot\sneat\.github\workflows\handle-new-issue.yml" />
     <None Include="wwwroot\sneat\.github\workflows\issue-staler.yml" />
@@ -42,7 +49,6 @@
   <ItemGroup>
     <Folder Include="Areas\Admin\Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Middlewares\" />
   </ItemGroup>
 
 </Project>

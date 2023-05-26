@@ -11,6 +11,7 @@ using OnlineExamProject.Domain.Entities.Identity;
 using OnlineExamProject.Persistence.Contexts;
 using OnlineExamProject.Persistence.Repositories;
 using OnlineExamProject.Persistence.Services;
+using StackExchange.Redis;
 using System.IO;
 
 
@@ -19,13 +20,16 @@ namespace OnlineExamProject.Persistence
 	public static class ServiceRegistration
 	{
 		public static void AddPersistenceServices(this IServiceCollection services)
-		{
+		{ 
 
 			ConfigurationManager configurationManager = new();
 			configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/OnlineExamProject.UI"));
 			configurationManager.AddJsonFile("appsettings.json");
 
 			services.AddDbContext<OnlineExamProjectDbContext>(options => options.UseSqlServer(configurationManager.GetConnectionString("SQLServer")));
+
+          
+
 
             services.AddIdentity<AppUser, AppRole>(opt =>
             {
@@ -61,20 +65,7 @@ namespace OnlineExamProject.Persistence
 			services.AddScoped<IGetUserInfo, GetUserInfo>();
             services.AddHttpContextAccessor();
 
-            //  services.AddScoped<IGetLoggedInUser, GetLoggedInUser>();
 
-            //services.AddDistributedRedisCache(options =>
-            //{
-            //	options.InstanceName = "RedisNetCoreSample";
-            //	options.Configuration = "localhost:6379"; //Your Redis Connectionf
-            //});
-            //			services.AddScoped<ICustomerWriteRepository, CustomerWriteRepository>();
-
-            //services.AddScoped<IOrderReadRepository, OrderReadRepository>();
-            //services.AddScoped<IOrderWriteRepository, OrderWriteRepository>();
-
-            //services.AddScoped<IProductReadRepository, ProductReadRepository>();
-            //services.AddScoped<IProductWriteRepository, ProductWriteRepository>();
 
         }
     }

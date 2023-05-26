@@ -52,7 +52,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
             var map = _mapper.Map<AppRole>(createRole);
             map.CreatedDate = DateTime.Now;
             _roleManager.CreateAsync(map);
-            return View();
+            return RedirectToAction("RoleList", "Role", new {@area="Admin"});
         }
         [HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Role, Definition = "Get Update Role", ActionType = ActionType.Read)]

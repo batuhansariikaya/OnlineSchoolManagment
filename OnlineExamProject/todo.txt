@@ -16,6 +16,11 @@
 6- sistemi CQRS Design Pattern'a geçir.
 7- identity validation s
 8- arama motoru optimizasyonu
+ 
+ cachelenecek veriler
+ yetkisiz eriþim sayfasý
+
+
 
 
 

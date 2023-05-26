@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RbI/N/DHjotmFqKTx17VBLeHbE8ahrs2/QsWLKVJMvPotAcE5BOcEst55mWIYKxRhPLDdzPn+ZWIJq1jOfXNqg==",
+  "dgSpecHash": "pqM37s2nFLx/b9VzBLlWxsVjGbuuvbZBYJ5HRhpZZ53KyNSDOjwpKTo+c8U2mNal1AZ65VwASrHmGs9IpQsUzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Batuhan\\source\\repos\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\OnlineExamProject.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\Batuhan\\source\\repos\\OnlineSchoolManagment\\OnlineExamProject\\Infrastructure\\OnlineExamProject.Infrastructure\\OnlineExamProject.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Batuhan\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\Batuhan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

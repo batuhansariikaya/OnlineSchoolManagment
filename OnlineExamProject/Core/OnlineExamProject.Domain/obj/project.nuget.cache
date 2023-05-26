@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P9rw7YY773BU2/Mv/QglepeaBDq0JAtOTHJeeeYzgXs366LEkcnUU2iqWPGJIUxd5leEwmA6qczsoE79dLPp0w==",
+  "dgSpecHash": "86vOy4511dhdAMqZN1l6wo6VrLHHeIoGxYi85HW3I52AUD/3vatCMXewHQNMeIDjObZSPMQiMCrWCja6Olqxsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Batuhan\\source\\repos\\OnlineExamProject\\Core\\OnlineExamProject.Domain\\OnlineExamProject.Domain.csproj",
+  "projectFilePath": "C:\\Users\\Batuhan\\source\\repos\\OnlineSchoolManagment\\OnlineExamProject\\Core\\OnlineExamProject.Domain\\OnlineExamProject.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Batuhan\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\Batuhan\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
