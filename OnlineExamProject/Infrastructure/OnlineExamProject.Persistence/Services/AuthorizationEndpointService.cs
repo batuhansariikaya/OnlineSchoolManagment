@@ -37,9 +37,7 @@ namespace OnlineExamProject.Persistence.Services
         }
         public async Task AssignRoleEndipointAsync(string roles,string menu, string code,Type type)
 		{
-            Menu? _menu = await _menuReadRepository.GetSingleAsync(m => m.Name == menu);
-
-
+            Menu _menu = await _menuReadRepository.GetSingleAsync(m => m.Name == menu);
             if (_menu == null)
             {
                 _menu = new()

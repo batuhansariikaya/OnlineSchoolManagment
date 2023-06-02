@@ -1,0 +1,15 @@
+﻿@model OnlineExamProject.Domain.Entities.Identity.AppRole
+@{
+    ViewData["Title"] = "Rol Güncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>AddExam</h1>
+<form action="/Admin/Role/UpdateRole/" method="post" class="m-3">  
+    @Html.TextBoxFor(x=>x.Name,new{@class="form-control"} )
+    @Html.ValidationMessageFor(x=>x.Name)
+    <button class="btn btn-primary">Gönder</button>
+</form>
+
+
+

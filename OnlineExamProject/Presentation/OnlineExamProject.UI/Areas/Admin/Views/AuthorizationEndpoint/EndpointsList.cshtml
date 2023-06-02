@@ -23,6 +23,7 @@
                                 <li>
                                     <div class="d-flex">
                                          <button class="btn btn-primary" value="@action.Id" type="button" data-bs-toggle="modal" data-bs-target="#roleList">Rol ata</button>
+                                         <br>
                                     <p id="definition">  @action.Definition</p>
                                     </div>                                   
                                 </li>
@@ -43,14 +44,14 @@
                                             aria-label="Kapat"></button>
                                 </div>
                                 <div class="col-lg-6">
-                                    <small class="text-light fw-semibold">List Group With Checkbox</small>
                                     <div class="demo-inline-spacing mt-3">
                                         <div class="list-group">
                                             @foreach (var _item in Model.Item2)
                                             {
                                                 <li><input class="form-check-input me-1" name="roles" type="checkbox" id="cbKutular" value="@_item.Name" />@_item.Name</li>
                                             }
-                                            <button type="submit">Ekle</button>
+                                            <button type="submit" class="btn btn-primary">Ekle</button>
+                                            <br />
                                         </div>
                                     </div>
                                 </div>

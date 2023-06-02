@@ -4,7 +4,7 @@
     ViewData["Title"] = "Kullanıcılar";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 
 <br />
@@ -18,8 +18,8 @@
                         <th>Ad</th>
                         <th>Soyad</th>
                         <th>Kullanıcı Adı</th>
-                        <th>Mail</th>                        
-                        <th>Rol</th>                        
+                        <th>Mail</th>
+                        <th>Rol</th>
                         <th>İşlemler</th>
                     </tr>
                 </thead>
@@ -34,14 +34,14 @@
                             <td>@item.Email</td>
                             <td>
                                 <a href="/Admin/Account/UserRoles/@item.Id" data-bs-toggle="modal"
-                               data-bs-target="#userRoleList" class="btn btn-success mb-3">
+                                   data-bs-target="#userRoleList" class="btn btn-success mb-3">
                                     Rolleri Gör
                                 </a>
                             <td>
-                                <a href="/Admin/Account/UpdateUser/@item.Id" class="btn btn-primary btn-sm"><i class="bx bxs-edit"></i></a>                  
+                                <a href="/Admin/Account/UpdateUser/@item.Id" class="btn btn-primary btn-sm"><i class="bx bxs-edit"></i></a>
                                 <a href="/Admin/Account/DeleteUser/@item.Id" class="btn btn-danger btn-sm"><i class="bx bx-minus-circle"></i></a>
                             </td>
-                         
+
                         </tr>
                         <div class="modal fade" id="userRoleList" tabindex="-1" aria-hidden="true">
 
@@ -50,16 +50,16 @@
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="exampleModalLabel1">Rol Ekle</h5>
                                         <button type="button"
-                                            class="btn-close"
-                                            data-bs-dismiss="modal"
-                                            aria-label="Kapat"></button>
+                                                class="btn-close"
+                                                data-bs-dismiss="modal"
+                                                aria-label="Kapat"></button>
                                     </div>
                                     <div class="col-lg-6">
                                         <small class="text-light fw-semibold">List Group With Checkbox</small>
                                         <div class="demo-inline-spacing mt-3">
                                             <div class="list-group">
 
-                                               <p>@item.Role</p>
+                                                <p>@item.Role</p>
                                             </div>
                                         </div>
                                     </div>
@@ -72,29 +72,10 @@
                 </tbody>
             </table>
         </div>
-    </div>   
+    </div>
 </div>
 
-<script>
-$('#getTeacher').click(function() {
-    $.ajax({
-        contentType:"application/json",
-        dataType:"json",
-        type:"Get",
-        url:"/Admin/Account/Teachers/",
-        success: function(func) {
-            let datas = jQuery.parseJSON(func);
-            console.log(datas);
-            let tablehtml = "<table class=table><tr><th>test</th></tr>";
-            $.each(datas, (index, value) => {
-                tablehtml += `<tr><td>${value.Name}</td></tr>`
-            });
-            tablehtml+="</table>"
-            $("#vav").html(tablehtml);
-        }
-    })
-})
-</script>
 
-        @*data-bs-toggle="modal"
+
+@*data-bs-toggle="modal"
                                     data-bs-target="#userRoleList"*@

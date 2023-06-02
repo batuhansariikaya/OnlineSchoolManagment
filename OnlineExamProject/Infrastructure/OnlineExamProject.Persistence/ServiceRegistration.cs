@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Controllers;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -12,6 +15,7 @@ using OnlineExamProject.Persistence.Contexts;
 using OnlineExamProject.Persistence.Repositories;
 using OnlineExamProject.Persistence.Services;
 using StackExchange.Redis;
+using System.ComponentModel;
 using System.IO;
 
 
@@ -40,7 +44,8 @@ namespace OnlineExamProject.Persistence
             }).AddPasswordValidator<CustomPasswordValidator>()
              .AddUserValidator<CustomUserValidator>()
             .AddRoleManager<RoleManager<AppRole>>()
-			.AddEntityFrameworkStores<OnlineExamProjectDbContext>();
+			.AddEntityFrameworkStores<OnlineExamProjectDbContext>()
+             .AddDefaultTokenProviders();
 			services.AddMemoryCache();
 
 
@@ -63,6 +68,9 @@ namespace OnlineExamProject.Persistence
             
             services.AddScoped<IUserService, UserService>();
 			services.AddScoped<IGetUserInfo, GetUserInfo>();
+         
+            
+
             services.AddHttpContextAccessor();
 
 

@@ -5,6 +5,7 @@ using OnlineExamProject.Application.Abstractions.Services;
 using OnlineExamProject.Application.Const;
 using OnlineExamProject.Application.CustomAttributes;
 using OnlineExamProject.Application.Enums;
+using OnlineExamProject.Application.Repositories;
 using OnlineExamProject.Domain.Entities.Identity;
 using OnlineExamProject.Persistence.Contexts;
 using System.Linq;
@@ -19,11 +20,15 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         readonly private OnlineExamProjectDbContext _context;
         readonly IUserService _userService;
         readonly UserManager<AppUser> _userManager;
-        public HomeController(OnlineExamProjectDbContext context, IUserService userService, UserManager<AppUser> userManager)
+        readonly IExamReadRepository _examReadRepository;
+        readonly IGradeReadRepository _gradeReadRepository;
+        public HomeController(OnlineExamProjectDbContext context, IUserService userService, UserManager<AppUser> userManager, IExamReadRepository examReadRepository, IGradeReadRepository gradeReadRepository)
         {
             _context = context;
             _userService = userService;
             _userManager = userManager;
+            _examReadRepository = examReadRepository;
+            _gradeReadRepository = gradeReadRepository;
         }
 
 
@@ -31,11 +36,25 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         {
             ViewBag.questionCount = _context.Questions.Count();
             ViewBag.examCount = _context.Exams.Count();
-            ViewBag.teacherCount = _context.Teachers.Count();
+            ViewBag.userCount = _context.Users.Count();
+            ViewBag.roleCount = _context.Roles.Count();
+           
             //var id=_userService.GetUserId();
             //AppUser user=await _userManager.FindByIdAsync(id);
+
             var user = _userService.GetUserInfo().Result;
-            ViewBag.data = user.Name;
+            ViewBag.nickName = user.UserName;
+            ViewBag.userName = user.Name;
+
+            //var lastUser=_userManager.Users.ToList().LastOrDefault();
+            //ViewBag.lastUser = lastUser;
+
+            //var lastExam=_examReadRepository.GetAll().ToList().LastOrDefault();
+            //ViewBag.lastExam = lastExam.Name;
+
+            //var lastGrade=_gradeReadRepository.GetAll().ToList().LastOrDefault();
+            //ViewBag.lastGrade = lastGrade.Name;
+
             return View();
         }
     }

@@ -9,6 +9,7 @@ using OnlineExamProject.Application.CustomAttributes;
 using OnlineExamProject.Application.Enums;
 using OnlineExamProject.Application.Repositories;
 using OnlineExamProject.Domain.Entities.Identity;
+using OnlineExamProject.Persistence.Services;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,24 +25,23 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 		readonly IAuthorizationEndpointService _authorizationEndpointService;
 		readonly IApplicationService _applicationService;
 		readonly IMenuReadRepository _menuReadRepository;
-
+		
         public AuthorizationEndpointController(RoleManager<AppRole> roleManager, IAuthorizationEndpointService authorizationEndpointService, IApplicationService applicationService, IMenuReadRepository menuReadRepository)
         {
             _roleManager = roleManager;
             _authorizationEndpointService = authorizationEndpointService;
             _applicationService = applicationService;
             _menuReadRepository = menuReadRepository;
-        }       
+            
+        }
+        [HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.AuthorizationEndpoint, Definition = "Endpoint List", ActionType = ActionType.Read)]
         public async Task<IActionResult> EndpointsList()
 		{
-			//var roleList= _roleManager.Roles.ToList();
-			//return View(roleList);
-			var roles= _roleManager.Roles.ToList();
-			var endpoints = await _applicationService.GetAuthorizeDefinitionEndpoints(typeof(Program));		
-			
-			//var rolesAndEndpoints = (roles, endpoints);
-			return View((endpoints,roles));
+			//var cacheData = _redisService.Get("endpointList");
+            var roles = _roleManager.Roles.ToList();
+            var endpoints = await _applicationService.GetAuthorizeDefinitionEndpoints(typeof(Program));
+			return View((endpoints, roles));
 		}
 		[HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.AuthorizationEndpoint, Definition = "Assing Role To Endpoint", ActionType = ActionType.Read)]

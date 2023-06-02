@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Microsoft.Extensions.Caching.Distributed;
+using OnlineExamProject.Application.Abstractions.Services;
 using OnlineExamProject.Application.Repositories;
 using OnlineExamProject.Domain.Entities;
 using System;
@@ -16,12 +17,15 @@ namespace OnlineExamProject.Application.Features.Queries.Question.GetAllQuestion
 		readonly IQuestionReadRepository _questionReadRepository;
 		readonly IExamReadRepository _examReadRepository;
 		readonly IDistributedCache _distributedCache;
+		readonly IUserService _userService;
+   
 
-		public GetAllQuestionQueryHandler(IQuestionReadRepository questionReadRepository, IExamReadRepository examReadRepository)
+        public GetAllQuestionQueryHandler(IQuestionReadRepository questionReadRepository, IExamReadRepository examReadRepository, IUserService userService)
 		{
 			_questionReadRepository = questionReadRepository;
 			_examReadRepository = examReadRepository;
-		}
+            _userService = userService;
+        }
 
 		public async Task<IQueryable<Exam>> Handle(GetAllQuestionQueryRequest request, CancellationToken cancellationToken)
 		{
@@ -47,29 +51,16 @@ namespace OnlineExamProject.Application.Features.Queries.Question.GetAllQuestion
 			//	var data = await _distributedCache.GetStringAsync("examList");
 			//	return 
 			//}
+
 			var datas = _examReadRepository.GetAll().Select(x => new Exam()
 			{
 				Id = x.Id,
 				Name = x.Name,
-				Description = x.Description
-
+				Description = x.Description,
+				UserId=x.UserId
 			});
 			return datas;
-
-		}
-		
-		//var veri = _distributedCache.Get("examList");
-		//if (veri == null)
-		//{
-		//	await _distributedCache.SetStringAsync("examList", Convert.ToString(datas));
-		//	return veri;
-		//}
-		//else
-		//{
-		//	_distributedCache.Get("examList");
-		//}
-		//return);
-
+		}		
 
 	}
 }

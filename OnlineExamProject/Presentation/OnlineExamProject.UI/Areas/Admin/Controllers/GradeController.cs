@@ -50,21 +50,21 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         {
             var map = _mapper.Map<Grade>(gradeAdd);
             map.Status = true;
-         
-            if (ModelState.IsValid)
-            {
+
+            
+            
                 _gradeWriteRepository.AddAsync(map);
                 _gradeWriteRepository.SaveAsync();
                 _gradeHubService.GradeAddMessageAsync("Sınıf Başarıyla Eklenmiştir.");
-            }
+            
 
-            return View();
+            return RedirectToAction("GradeList", "Grade", new {@area="Admin"});
         }
         [HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Grade, Definition = "Grade Delete", ActionType = ActionType.Delete)]
         public async Task<IActionResult> GradeDelete(int id)
         {
-            Grade grade = await _gradeReadRepository.GetByIdAsync(id);
+            Grade grade = await _gradeReadRepository.GetByIdAsync(id);            
             _gradeWriteRepository.Remove(grade);
             await _gradeWriteRepository.SaveAsync();
             return View();
@@ -80,17 +80,11 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult GradeUpdate(Grade grade)
         {
-            if(ModelState.IsValid)
-                _gradeWriteRepository.Update(grade);
-                _gradeWriteRepository.SaveAsync();
+            _gradeWriteRepository.Update(grade);
+            _gradeWriteRepository.SaveAsync();
             return View();
         }
-        public IActionResult AddStudentToClass()
-        {
-
-            return View();
-        }
+       
 
     }
 }
-// sınıfınId userId 

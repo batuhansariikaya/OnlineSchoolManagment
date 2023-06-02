@@ -15,7 +15,11 @@ using OnlineExamProject.Domain.Entities.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
+using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace OnlineExamProject.UI.Areas.Admin.Controllers
 {
@@ -38,6 +42,8 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
             _userService = userService;
             _gradeReadRepository = gradeReadRepository;
         }
+
+		[HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "Get All Account", ActionType = ActionType.Read)]
 		public IActionResult Users()
 		{
@@ -51,8 +57,10 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 			//	item.Role = userRole;
 			//}
 			
+			
 			return View(map);
-		}		
+		}
+		[HttpGet]
 		[AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "Delete User", ActionType = ActionType.Delete)]
 		public async Task<IActionResult> DeleteUser(int id) 
 		{
@@ -62,7 +70,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 		}
 		[HttpGet]
 		[AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "Update User", ActionType = ActionType.Update)]
-		public async Task<IActionResult> UpdateUser(int id )
+		public async Task<IActionResult> UpdateUser(int id)
 		{
 			AppUser user=await _userManager.FindByIdAsync(id.ToString());
 			var  roles = await _roleManager.Roles.ToListAsync();
@@ -92,23 +100,86 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 			AppUser user =await _userManager.FindByIdAsync(userUpdate.Id.ToString());
 			var updateUser= _mapper.Map(userUpdate, user);			
 			await _userManager.UpdateAsync(updateUser);
+		
 			return View();
 		}
 		[HttpGet]
-		public IActionResult GetUserInfo()
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "Get User Info", ActionType = ActionType.Read)]
+
+        public IActionResult GetUserInfo()
 		{
 			var user= _userService.GetUserInfo().Result;			
 			return View(user);
 		}
+		[HttpGet]
+		[AuthorizeDefinition(Menu =AuthorizeDefinitionConstanst.Account,Definition ="User Roles",ActionType =ActionType.Read)]
 		public async Task<IActionResult> UserRoles(int id)
 		{
 			var findUserId = await _userManager.FindByIdAsync(id.ToString());
             var userRole = string.Join("\n ", await _userManager.GetRolesAsync(findUserId));        
 			return View(userRole);
         }
+		[HttpGet]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "PasswordReset Get", ActionType = ActionType.Read)]
+		public IActionResult PasswordReset()
+		{
+			return View();
+		}
+        [HttpPost]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "PasswordReset Post", ActionType = ActionType.Add)]
+        public async Task<IActionResult> PasswordReset(ResetPasswordDTO reset)
+        {
+            AppUser user = await _userManager.FindByEmailAsync(reset.Email);
+            if (user is not null)
+            {
+                string resetToken = await _userManager.GeneratePasswordResetTokenAsync(user);
+                MailMessage mail = new();
+                mail.IsBodyHtml = true;
+                mail.To.Add(user.Email);
+                mail.From = new MailAddress("batuhansarikaya008@gmail.com", "Şifre Güncelleme", Encoding.UTF8);
+                mail.Subject = "Şifre Güncelleme Talebi";
 
-	}
+
+                mail.Body = $"<a target=\"_blank\" href=\"https://localhost:44398{Url.Action("UpdatePassword", "Account", new { userId = user.Id, token = HttpUtility.UrlEncode(resetToken) })}\">Yeni şifre talebi için tıklayınız</a>";
+                SmtpClient smp = new();
+                smp.Credentials = new NetworkCredential("batuhansarikaya008@gmail.com", "B@tuh@n861");
+                smp.Port = 587;
+                smp.Host = "smtp.gmail.com";
+                smp.EnableSsl = true;
+                smp.Send(mail);
+				ViewBag.State = true;
+            }
+            else
+            {
+               ViewBag.State = false;
+            }
+            return View();
+        }
+        [HttpGet("[action]/{userId}/{token}")]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "UpdatePassword Get", ActionType = ActionType.Read)]
+        public IActionResult UpdatePassword(string userId,string token)
+        {
+            return View();
+        }
+        [HttpPost("[action]/{userId}/{token}")]
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "UpdatePassword Post", ActionType = ActionType.Add)]
+        public async Task<IActionResult> UpdatePassword(UpdatePasswordDTO updatePassword,string userId,string token)
+        {
+			AppUser user =await _userManager.FindByIdAsync(userId);
+			IdentityResult result = await _userManager.ResetPasswordAsync(user, HttpUtility.UrlDecode(token), updatePassword.NewPassword);
+			if( result.Succeeded)
+			{
+				ViewBag.State = true;
+                await _userManager.UpdateSecurityStampAsync(user);
+            }
+			else
+			{
+				ViewBag.State = false;
+			}
+            return View();
+        }
+
+    }
 }
 
 
-// kullanıcıyı sınıflara ekleme

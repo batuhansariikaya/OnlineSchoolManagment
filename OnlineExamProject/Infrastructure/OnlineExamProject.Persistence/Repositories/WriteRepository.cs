@@ -64,8 +64,9 @@ namespace OnlineExamProject.Persistence.Repositories
 			//_context.Remove(model);
 			//return true;
 			
-			  EntityEntry<T> entityEntry = Table.Remove(model);
-            return entityEntry.State == EntityState.Deleted;
+			EntityEntry<T> entityEntry = Table.Update(model);
+			model.Status = false;
+            return entityEntry.State == EntityState.Modified;
 		}
 
 		public Task<bool> RemoveAsync(int id)

@@ -44,10 +44,11 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 			_mapper = mapper;
 			_notifyService = notifyService;
 		}
+		[HttpGet]
 		[AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Question, Definition = "Get All Questions", ActionType = ActionType.Read)]
 		public async Task<IActionResult> Index(GetAllQuestionQueryRequest questionQueryRequest)
 		{
-			var response = await _mediator.Send(questionQueryRequest);
+			var response = await _mediator.Send(questionQueryRequest);			
 			return View(response);
 		}
 		[HttpGet("{id}")]
@@ -96,8 +97,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 		public async Task<IActionResult> QuestionDelete(int id)
 		{
 			Question question = await _questionReadRepository.GetByIdAsync(id);
-			question.Status = false;
-			_questionWriteRepository.Update(question);
+			_questionWriteRepository.Remove(question);
 			await _questionWriteRepository.SaveAsync();
 			return View();
 		}

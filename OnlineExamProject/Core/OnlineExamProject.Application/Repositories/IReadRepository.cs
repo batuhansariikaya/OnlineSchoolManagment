@@ -15,5 +15,6 @@ namespace OnlineExamProject.Application.Repositories
         Task<T> GetSingleAsync(Expression<Func<T, bool>> method, bool tracking = true);
         Task<T> GetByIdAsync(int id, bool tracking = true);
         T GetIdInfo(int id);
+        IQueryable<T> GetAllPassive(bool tracking = true);
     }
 }

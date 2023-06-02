@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.EntityFrameworkCore;
 using OnlineExamProject.Application.Abstractions.Services;
+using OnlineExamProject.Application.DTOs.User;
 using OnlineExamProject.Application.Repositories;
 using OnlineExamProject.Domain.Entities;
 using OnlineExamProject.Domain.Entities.Identity;
@@ -9,9 +12,13 @@ using OnlineExamProject.Persistence.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
 using System.Security.Claims;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 using Endpoint = OnlineExamProject.Domain.Entities.Endpoint;
 
 namespace OnlineExamProject.Persistence.Services
@@ -22,12 +29,14 @@ namespace OnlineExamProject.Persistence.Services
         readonly IEndpointReadRepository _endpointReadRepository;
         readonly UserManager<AppUser> _userManager;
         private readonly IHttpContextAccessor _httpContextAccessor;
+        
         public UserService(RoleManager<AppRole> roleManager, IEndpointReadRepository endpointReadRepository, UserManager<AppUser> userManager, IHttpContextAccessor httpContextAccessor)
         {
             _roleManager = roleManager;
             _endpointReadRepository = endpointReadRepository;
             _userManager = userManager;
             _httpContextAccessor = httpContextAccessor;
+        
         }
 
         public async Task<string[]> GetRolesToUserAsync(string userNameOrEmail)
@@ -95,5 +104,8 @@ namespace OnlineExamProject.Persistence.Services
 
             return false;
         }
+
+     
+        }
     }
-}
+

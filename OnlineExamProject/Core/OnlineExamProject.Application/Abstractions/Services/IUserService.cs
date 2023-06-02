@@ -1,4 +1,5 @@
-﻿using OnlineExamProject.Domain.Entities.Identity;
+﻿using OnlineExamProject.Application.DTOs.User;
+using OnlineExamProject.Domain.Entities.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;

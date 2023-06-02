@@ -35,9 +35,9 @@ namespace OnlineExamProject.Persistence.Services
 
         }
 
-        public async Task<bool> UpdateRoleAsync(string name)
+        public async Task<bool> UpdateRoleAsync(int id)
         {
-			AppRole role = await _roleManager.FindByNameAsync(name);
+			AppRole role = await _roleManager.FindByIdAsync(id.ToString());
 			IdentityResult result=await _roleManager.UpdateAsync(role);
 			return result.Succeeded;
         }

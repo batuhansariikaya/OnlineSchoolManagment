@@ -38,7 +38,7 @@ namespace OnlineExamProject.Persistence.Repositories
 
 		public async Task<Question> GetByIdAsyncWithExam(int id)
 		{
-			return await Table.Include(a=>a.Exam).FirstOrDefaultAsync(x => x.Id == id);
+			return await Table.Include(exam=>exam.Exam).FirstOrDefaultAsync(x => x.Id == id);
 		}
 	}
 }

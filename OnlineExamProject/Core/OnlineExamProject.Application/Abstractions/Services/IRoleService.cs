@@ -10,6 +10,6 @@ namespace OnlineExamProject.Application.Abstractions.Services
 	{
 		 Task<bool> CreateRoleAsync(string name); 
 		 Task<bool> DeleteRoleAsync(int id);
-		 Task<bool> UpdateRoleAsync(string name);
+		 Task<bool> UpdateRoleAsync(int id);
 	}
 }

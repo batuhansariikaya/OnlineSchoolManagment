@@ -8,13 +8,17 @@
     <div class="card-body demo-vertical-spacing demo-only-element">
 <form action="/Admin/Exam/ExamUpdate/" method="post" class="m-3">
     <div asp-validation-summary="ModelOnly"></div>
+            @Html.Label("Sınav Adı:")
             @Html.TextBoxFor(x=>x.Name,new{@class="form-control"} )           
             <br />
+            @Html.Label("Sınav Açıklaması:")
             @Html.TextBoxFor(x=>x.Description,new{@class="form-control"})    
             <br />
+            @Html.Label("Sınav Süresi (dk):")
             @Html.TextBoxFor(x=>x.Time,new{@class="form-control"})
             <br />
-           @* @Html.TextBoxFor(x=>x.TeacherId,new{@class="form-control"})*@
+            @Html.Label("Durum:")
+           @Html.TextBoxFor(x=>x.Status,new{@class="form-control"})
             <br />
     <button type="submit" class="btn btn-primary">Gönder</button>
 </form>  

@@ -28,8 +28,24 @@ namespace OnlineExamProject.Persistence.Repositories
 				query = query.AsNoTracking();
 			return query;
 		}
-		
-		public async Task<T> GetByIdAsync(int id, bool tracking = true)
+
+        public IQueryable<T> GetAllActive(bool tracking = true)
+        {
+            var query = Table.AsQueryable().Where(x=>x.Status==true);
+            if (!tracking)
+                query = query.AsNoTracking();
+            return query; ;
+        }
+
+        public IQueryable<T> GetAllPassive(bool tracking = true)
+        {
+            var query = Table.AsQueryable().Where(x => x.Status == false);
+            if (!tracking)
+                query = query.AsNoTracking();
+            return query; ;
+        }
+
+        public async Task<T> GetByIdAsync(int id, bool tracking = true)
 		{
 			return await Table.FirstOrDefaultAsync(x=>x.Id==id);
 		}
