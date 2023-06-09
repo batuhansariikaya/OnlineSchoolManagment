@@ -18,5 +18,6 @@ namespace OnlineExamProject.Application.Repositories
         bool Update(T model);
 
         Task<int> SaveAsync();
+        bool MakeActive(T model);
     }
 }

@@ -18,7 +18,7 @@
                         <th>Süre</th>
                         <th>Öğretmen</th>
                         <th>Durum</th>
-                        <th>İşlemler</th>
+                        <th>Aktifleştir</th>
                     </tr>
                 </thead>
                 <tbody class="table-border-bottom-0">
@@ -27,13 +27,12 @@
                         <tr>
                             <td><i class="fab fa-angular fa-lg texts-danger"></i> @item.Name</td>
                             <td>@item.Description</td>
-                            <td>tarih</td>
+                            <td>@item.CreatedDate</td>
                             <td>@item.Time</td>
-                            <td>Batuhan Sarıkaya</td>                                                                                
+                            <td>@item.UserId</td>                                                                                
                                 <td><span class="badge bg-label-danger me-1">Pasif</span></td>                           
                             <td>
-                                <a href="/Admin/Exam/ExamUpdate/@item.Id"><i class="bx bx-edit"></i></a>
-                                <a href="/Admin/Exam/Delete/@item.Id"><i class="bx bx-undo"></i></a>
+                                <a href="/Admin/Exam/MakeActive/@item.Id"><i class="bx bx-undo"></i></a>
                             </td>
                         </tr>
                     }

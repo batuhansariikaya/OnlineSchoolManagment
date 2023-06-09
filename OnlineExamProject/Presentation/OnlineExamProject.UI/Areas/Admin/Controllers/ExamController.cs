@@ -58,7 +58,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Exam, Definition = "Get Add Exam", ActionType = ActionType.Read)]
         public IActionResult AddExam()
         {
-        
+
             return View();
         }
         // bir sınavın birden fazla sorusu olabilir.
@@ -125,9 +125,15 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Exam, Definition = "Deleted Exams", ActionType = ActionType.Read)]
         public IActionResult DeletedExams()
         {
+            var exam = _examReadRepository.GetAllPassive();
+            return View(exam);
+        }
 
-
-
+        [HttpGet("{id}")]
+        public async Task<IActionResult> MakeActive(int id)
+        {
+            Exam exam=await _examReadRepository.GetByIdAsync(id);
+            _examWriteRepository.MakeActive(exam);
             return View();
         }
 

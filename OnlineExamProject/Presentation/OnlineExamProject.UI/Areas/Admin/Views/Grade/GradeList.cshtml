@@ -26,7 +26,16 @@
                             <th>@item.Id</th>
                             <th>@item.Code</th>
                             <td><i class="fab fa-angular fa-lg texts-danger"></i> @item.Name</td>
-                            <td>@item.Status</td>
+                            @if (item.Status)
+                            {
+                                <td><span class="badge bg-label-success me-1">Aktif</span></td>
+
+                            }
+                            else
+                            {
+                                <td><span class="badge bg-label-danger me-1">Pasif</span></td>
+
+                            }
                             <td>
                                 <a href="/Admin/Grade/GradeUpdate/@item.Id" class="btn btn-primary btn-sm"><i class="bx bxs-edit"></i></a>
                                 <a href="/Admin/Grade/GradeDelete/@item.Id" class="btn btn-danger btn-sm"><i class="bx bx-trash"></i></a>

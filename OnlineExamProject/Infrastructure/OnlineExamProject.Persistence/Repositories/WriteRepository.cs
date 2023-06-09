@@ -43,23 +43,31 @@ namespace OnlineExamProject.Persistence.Repositories
 			Table.AddAsync(model);
 		}
 
-		//public  bool Commit(bool state = true)
-		//{
-		//	 SaveAsync();
-		//	if (state)
-		//		transaction.Commit();
-		//	else
-		//		transaction.Rollback();
-		//	Dispose();
-		//	return true;
-		//}
+        public bool MakeActive(T model)
+        {
+            EntityEntry<T> entityEntry = Table.Update(model);
+            model.Status = true;
+            return entityEntry.State == EntityState.Modified;
 
-		//public void Dispose()
-		//{
-		//	_context.Dispose();
-		//}
+        }
 
-		public bool Remove(T model)
+        //public  bool Commit(bool state = true)
+        //{
+        //	 SaveAsync();
+        //	if (state)
+        //		transaction.Commit();
+        //	else
+        //		transaction.Rollback();
+        //	Dispose();
+        //	return true;
+        //}
+
+        //public void Dispose()
+        //{
+        //	_context.Dispose();
+        //}
+
+        public bool Remove(T model)
 		{
 			//_context.Remove(model);
 			//return true;

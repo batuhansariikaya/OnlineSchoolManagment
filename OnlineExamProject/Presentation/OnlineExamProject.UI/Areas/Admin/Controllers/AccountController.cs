@@ -111,13 +111,14 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 			var user= _userService.GetUserInfo().Result;			
 			return View(user);
 		}
-		[HttpGet]
+		[HttpGet("{id}")]
 		[AuthorizeDefinition(Menu =AuthorizeDefinitionConstanst.Account,Definition ="User Roles",ActionType =ActionType.Read)]
 		public async Task<IActionResult> UserRoles(int id)
 		{
-			var findUserId = await _userManager.FindByIdAsync(id.ToString());
-            var userRole = string.Join("\n ", await _userManager.GetRolesAsync(findUserId));        
-			return View(userRole);
+			AppUser userId = await _userManager.FindByIdAsync(id.ToString());
+			// string[] userRoles = string.Join("\n ", await _userManager.GetRolesAsync(userId));   ,
+			var userRoles=await _userManager.GetRolesAsync(userId);
+			return View(userRoles);
         }
 		[HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Account, Definition = "PasswordReset Get", ActionType = ActionType.Read)]

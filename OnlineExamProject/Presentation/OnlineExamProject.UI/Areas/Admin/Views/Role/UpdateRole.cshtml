@@ -4,12 +4,21 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>AddExam</h1>
-<form action="/Admin/Role/UpdateRole/" method="post" class="m-3">  
-    @Html.TextBoxFor(x=>x.Name,new{@class="form-control"} )
-    @Html.ValidationMessageFor(x=>x.Name)
-    <button class="btn btn-primary">Gönder</button>
-</form>
+
+
+<div class="card m-3 ">
+    <h5 class="card-header">Rol Güncelle</h5>
+    <div class="card-body demo-vertical-spacing demo-only-element">
+        <form method="post" action="/Admin/Role/UpdateRole/">
+            @Html.HiddenFor(x=>x.Id)
+            @Html.Label("Rol Adı")
+            @Html.TextBoxFor(x=>x.Name,new{@class="form-control"})
+            <br />
+            <button class="btn btn-primary">Ekle</button>
+        </form>
+    </div>
+</div>
+
 
 
 

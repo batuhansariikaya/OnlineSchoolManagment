@@ -49,32 +49,35 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Role, Definition = "Create Role", ActionType = ActionType.Add)]
         public async Task<IActionResult> CreateRole(AppRole createRole)
         {
-            
+             
             //var map = _mapper.Map<AppRole>(createRole);
             createRole.CreatedDate = DateTime.Now;
             await _roleManager.CreateAsync(createRole);
             return RedirectToAction("RoleList", "Role", new {@area="Admin"});
         }
-        [HttpGet]
+        [HttpGet("{id}")]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Role, Definition = "Get Update Role", ActionType = ActionType.Read)]
-        public IActionResult UpdateRole(int id) 
+        public async Task<IActionResult> UpdateRole(int id) 
         {
-            var role =_roleManager.FindByIdAsync(id.ToString());
+            AppRole role =await _roleManager.FindByIdAsync(id.ToString());
             return View(role);
         }
         [HttpPost]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Role, Definition = "Update Role", ActionType = ActionType.Update)]       
         public async Task<IActionResult> UpdateRole(AppRole role)
         {
-            await _roleService.UpdateRoleAsync(role.Id);            
+            
+
+
+            await _roleManager.UpdateAsync(role);
+            //await _roleService.UpdateRoleAsync(role.Id);            
             return View();
         }
 
         [HttpGet("{id}")]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Role, Definition = "Delete Role", ActionType = ActionType.Delete)]
         public async Task<IActionResult> DeleteRole(int id)
-        {
-           
+        {           
             await _roleService.DeleteRoleAsync(id);
             return RedirectToAction("RoleList", "Role",new {@Area="Admin"});
         }

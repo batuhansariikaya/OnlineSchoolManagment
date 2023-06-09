@@ -11,6 +11,8 @@ using OnlineExamProject.Application.Enums;
 using OnlineExamProject.Application.Repositories;
 using OnlineExamProject.Application.Validators.Grade;
 using OnlineExamProject.Domain.Entities;
+using OnlineExamProject.Persistence.Repositories;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace OnlineExamProject.UI.Areas.Admin.Controllers
@@ -35,7 +37,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Grade, Definition = "Grade List", ActionType = ActionType.Read)]
         public IActionResult GradeList()
         {
-            var datas = _gradeReadRepository.GetAll();
+            var datas = _gradeReadRepository.GetAll().Where(x=>x.Status==true);
             return View(datas);
         }
         [HttpGet]
@@ -67,7 +69,7 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
             Grade grade = await _gradeReadRepository.GetByIdAsync(id);            
             _gradeWriteRepository.Remove(grade);
             await _gradeWriteRepository.SaveAsync();
-            return View();
+            return RedirectToAction("GradeList", "Grade", new {@area="Admin"});
         }
         [HttpGet]
         [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Grade, Definition = "Grade Update Get", ActionType = ActionType.Read)]
@@ -84,7 +86,18 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
             _gradeWriteRepository.SaveAsync();
             return View();
         }
-       
+        [AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Grade, Definition = "Deleted Grades", ActionType = ActionType.Read)]
+        [HttpGet]
+        public IActionResult DeletedGrades()
+        {
+            var deleted=_gradeReadRepository.GetAllPassive();
+            return View(deleted);
+        }
+        [HttpGet("{id}")]
+        public async Task<IActionResult> MakeActive(int id)
+        {
+            return View();
+        }
 
     }
 }

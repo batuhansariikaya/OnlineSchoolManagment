@@ -486,3 +486,4 @@ C:\Users\Batuhan\source\repos\OnlineSchoolManagment\OnlineExamProject\Presentati
 C:\Users\Batuhan\source\repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Account\PasswordReset.cshtml.g.cs
 C:\Users\Batuhan\source\repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Account\UpdatePassword.cshtml.g.cs
 C:\Users\Batuhan\source\repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Role\UpdateRole.cshtml.g.cs
+C:\Users\Batuhan\source\repos\OnlineSchoolManagment\OnlineExamProject\Presentation\OnlineExamProject.UI\obj\Debug\net5.0\Razor\Areas\Admin\Views\Grade\DeletedGrades.cshtml.g.cs

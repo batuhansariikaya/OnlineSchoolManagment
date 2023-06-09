@@ -39,7 +39,7 @@ namespace OnlineExamProject.Persistence.Repositories
             //AppUser user = await _userService.GetUserInfo();            
             //user.Id
             
-            return  Table.Include(x=>x.Questions).Where(u=>u.UserId==id/* && u.Status==true*/).ToList();
+            return  Table.Include(x=>x.Questions).Where(u=>u.UserId==id && u.Status==true).ToList();
 
         }
 

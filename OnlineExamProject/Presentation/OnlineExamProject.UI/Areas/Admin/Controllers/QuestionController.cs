@@ -56,9 +56,9 @@ namespace OnlineExamProject.UI.Areas.Admin.Controllers
 		public async Task<IActionResult> ExamQuestions(int id)
 		{
 			Question question = await _questionReadRepository.GetByIdAsyncWithExam(id);// dataları tutuyor.
-			ViewBag.questionHeader = question.Exam.Name;
+			//ViewBag.questionHeader = question.Exam.Name;
 			ViewBag.examId = question.Id;
-			return View();
+			return View(question);
 		}
 		[HttpPost]
 		[AuthorizeDefinition(Menu = AuthorizeDefinitionConstanst.Question, Definition = "Add Questions", ActionType = ActionType.Add)]

@@ -1,0 +1,43 @@
+﻿@using OnlineExamProject.Domain.Entities
+@model IEnumerable<Grade>
+@{
+    ViewData["Title"] = "DeletedGrades";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="card" style="margin:30px;">
+        <div class="table-responsive text-nowrap">
+            <table class="table">
+                <thead class="table-light">
+                    <tr>
+                        <th>#</th>
+                        <th>Kod</th>
+                        <th>Sınıf</th>
+                        <th>Durum</th>                        
+                        <th>Aktifleştir</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><i class="fab fa-angular fa-lg texts-danger"></i> @item.Name</td>
+                            <td>@item.Id</td>
+                            <td>@item.Code</td>
+                            <td>@item.Name</td>
+                            <td>@item.Status</td>
+                            <td><span class="badge bg-label-danger me-1">Pasif</span></td>
+                            <td>
+                                <a href="/Admin/Grade/MakeActive/@item.Id"><i class="bx bx-undo"></i></a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+s
+

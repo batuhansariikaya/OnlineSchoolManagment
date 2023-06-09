@@ -16,5 +16,6 @@ namespace OnlineExamProject.Application.Repositories
         Task<T> GetByIdAsync(int id, bool tracking = true);
         T GetIdInfo(int id);
         IQueryable<T> GetAllPassive(bool tracking = true);
+        
     }
 }
