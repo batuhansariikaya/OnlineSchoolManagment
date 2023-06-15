@@ -11,3 +11,6 @@ Technologies and frameworks I use
 - Identity 
 - Redis 
 - SignalR 
+
+![Alt text]("C:\Users\Batuhan\Downloads\WhatsApp Image 2023-05-31 at 19.05.45.jpeg")
+
