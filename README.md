@@ -11,6 +11,5 @@ Technologies and frameworks I use
 - Identity 
 - Redis 
 - SignalR 
-
-![Alt text](image link)("C:\Users\Batuhan\Downloads\WhatsApp Image 2023-05-31 at 19.05.45.jpeg")
+![The San Juan Mountains are beautiful!](/assets/images/san-juan-mountains.jpg "San Juan Mountains")
 
